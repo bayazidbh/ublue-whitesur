@@ -4,7 +4,7 @@
 name: ublue-kinoite-customized
 # The native container image to build on top of.
 # Warning: Non-uBlue images might not work properly, due to missing components.
-base-image: ghcr.io/ublue-os/silverblue-main
+base-image: ghcr.io/ublue-os/kinoite-main
 # What Fedora version to use. Use an explicit version or `latest`.
 # If you use `latest`, you will be automatically updated to the next major
 # Fedora version, assuming the image you're using as your base container
@@ -42,6 +42,7 @@ rpm:
   repos:
   # Example (which also demonstrates version number expansion):
   # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%FEDORA_VERSION%/atim-starship-fedora-%FEDORA_VERSION%.repo
+  - https://copr.fedorainfracloud.org/coprs/sunwire/input-remapper/repo/fedora-%FEDORA_VERSION%/sunwire-input-remapper-fedora-%FEDORA_VERSION%.repo
 
   # These RPMs will be installed from your enabled repositories (Fedora's own
   # repos, extra "repos" you've added, etc). The installation is automatically
@@ -58,6 +59,23 @@ rpm:
     # Add your own below:
     # Example:
     # - tilix
+    - gnome-boxes
+    - zsh
+    - fish
+    - kate
+    - icoutils
+    - applet-window-buttons
+    - avif-pixbuf-loader
+    - heif-pixbuf-loader
+    - qt-heif-image-plugin
+    - libheif-freeworld
+    - libheif-tools
+    - glib2-devel
+    - sassc
+    - nmap
+    - wsdd
+    - python-input-remapper
+
   # These RPMs will be removed from the system image. This step happens during
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
   remove:
@@ -78,5 +96,19 @@ firstboot:
   # the "just setup-flatpaks" command from our "custom.just" template file.
   # This is just an example selection:
   flatpaks:
-    - io.github.celluloid_player.Celluloid
-    - org.kde.krita
+    -  com.github.Eloston.UngoogledChromium
+    -  com.github.micahflee.torbrowser-launcher
+    -  com.github.tchx84.Flatseal
+    -  com.microsoft.EdgeDev
+    -  com.steamgriddb.SGDBoop
+    -  com.stremio.Stremio
+    -  com.usebottles.bottles
+    -  com.wps.Office
+    -  io.github.Foldex.AdwSteamGtk
+    -  io.github.Soundux
+    -  io.github.aandrew_me.ytdn
+    -  io.wavebox.Wavebox
+    -  net.codeindustry.MasterPDFEditor
+    -  net.cozic.joplin_desktop
+    -  org.ferdium.Ferdium
+    -  org.upscayl.Upscayl
