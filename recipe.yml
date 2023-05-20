@@ -64,6 +64,7 @@ rpm:
     - fish
     - kate
     - icoutils
+    - kio-admin
     - applet-window-buttons
     - avif-pixbuf-loader
     - heif-pixbuf-loader
@@ -72,6 +73,7 @@ rpm:
     - libheif-tools
     - glib2-devel
     - sassc
+    - samba
     - nmap
     - wsdd
     - python-input-remapper
