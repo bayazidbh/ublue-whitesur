@@ -59,23 +59,42 @@ rpm:
     # Add your own below:
     # Example:
     # - tilix
-    - gnome-boxes
+
+    # shell
     - zsh
     - fish
-    - kate
-    - icoutils
-    - kio-admin
-    - applet-window-buttons
+
+    # virtualization
+    - gnome-boxes
+
+    # network shares
+    - samba
+    - nmap
+    - wsdd
+
+    # AVIF and HEIF
     - avif-pixbuf-loader
     - heif-pixbuf-loader
     - qt-heif-image-plugin
     - libheif-freeworld
     - libheif-tools
+
+    # kde utils
+    - kate
+    - icoutils
+    - kio-admin
+    - applet-window-buttons
+
+    # whitesur deps
     - glib2-devel
     - sassc
-    - samba
-    - nmap
-    - wsdd
+    - libappstream-glib
+
+    # gaming-utils
+    - gamescope
+    - gameconqueror
+
+    # other utils
     - python-input-remapper
 
   # These RPMs will be removed from the system image. This step happens during
@@ -97,20 +116,20 @@ firstboot:
   # Alternatively, if you've disabled "yafti", you can still install these via
   # the "just setup-flatpaks" command from our "custom.just" template file.
   # This is just an example selection:
-  flatpaks:
-    -  com.github.Eloston.UngoogledChromium
-    -  com.github.micahflee.torbrowser-launcher
-    -  com.github.tchx84.Flatseal
-    -  com.microsoft.EdgeDev
-    -  com.steamgriddb.SGDBoop
-    -  com.stremio.Stremio
-    -  com.usebottles.bottles
-    -  com.wps.Office
-    -  io.github.Foldex.AdwSteamGtk
-    -  io.github.Soundux
-    -  io.github.aandrew_me.ytdn
-    -  io.wavebox.Wavebox
-    -  net.codeindustry.MasterPDFEditor
-    -  net.cozic.joplin_desktop
-    -  org.ferdium.Ferdium
-    -  org.upscayl.Upscayl
+  # flatpaks:
+  #  -  com.github.Eloston.UngoogledChromium
+  #  -  com.github.micahflee.torbrowser-launcher
+  #  -  com.github.tchx84.Flatseal
+  #  -  com.microsoft.EdgeDev
+  #  -  com.steamgriddb.SGDBoop
+  #  -  com.stremio.Stremio
+  #  -  com.usebottles.bottles
+  #  -  com.wps.Office
+  #  -  io.github.Foldex.AdwSteamGtk
+  #  -  io.github.Soundux
+  #  -  io.github.aandrew_me.ytdn
+  #  -  io.wavebox.Wavebox
+  #  -  net.codeindustry.MasterPDFEditor
+  #  -  net.cozic.joplin_desktop
+  #  -  org.ferdium.Ferdium
+  #  -  org.upscayl.Upscayl
