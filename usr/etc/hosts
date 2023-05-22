@@ -1,0 +1,20 @@
+# Loopback entries; do not change.
+# For historical reasons, localhost precedes localhost.localdomain:
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+# See hosts(5) for proper format and other examples:
+# 192.168.1.10 foo.mydomain.org foo
+# 192.168.1.13 bar.mydomain.org bar
+
+0.0.0.0 overseauspider.yuanshen.com
+0.0.0.0 log-upload-os.hoyoverse.com
+
+0.0.0.0 log-upload.mihoyo.com
+0.0.0.0 uspider.yuanshen.com
+0.0.0.0 sg-public-data-api.hoyoverse.com
+
+0.0.0.0 prd-lender.cdp.internal.unity3d.com
+0.0.0.0 thind-prd-knob.data.ie.unity3d.com
+0.0.0.0 thind-gke-usc.prd.data.corp.unity3d.com
+0.0.0.0 cdp.cloud.unity3d.com
+0.0.0.0 remote-config-proxy-prd.uca.cloud.unity3d.com

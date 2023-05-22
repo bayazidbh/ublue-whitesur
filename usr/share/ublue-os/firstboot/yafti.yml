@@ -50,33 +50,33 @@ screens:
       show_terminal: true
       package_manager: yafti.plugin.flatpak
       package_manager_defaults:
-        user: false
-        system: true
+        user: true
+        system: false
       groups:
-        Core GNOME Apps:
-          description: Core system applications for the GNOME desktop environment.
-          default: true
-          packages:
-            - Calculator: org.gnome.Calculator
-            - Calendar: org.gnome.Calendar
-            - Characters: org.gnome.Characters
-            - Cheese: org.gnome.Cheese
-            - Clocks: org.gnome.clocks
-            - Connections: org.gnome.Connections
-            - Contacts: org.gnome.Contacts
-            - Disk Usage Analyzer: org.gnome.baobab
-            - Document Scanner: org.gnome.SimpleScan
-            - Document Viewer: org.gnome.Evince
-            - Extension Manager: com.mattjakeman.ExtensionManager
-            - Font Viewer: org.gnome.font-viewer
-            - Image Viewer: org.gnome.eog
-            - Logs: org.gnome.Logs
-            - Maps: org.gnome.Maps
-            - Photos (Organizer): org.gnome.Photos
-            - Sushi (Nautilus Previewer): org.gnome.NautilusPreviewer
-            - Text Editor: org.gnome.TextEditor
-            - Videos (Player): org.gnome.Totem
-            - Weather: org.gnome.Weather
+      #  Core GNOME Apps:
+      #    description: Core system applications for the GNOME desktop environment.
+      #    default: false
+      #    packages:
+      #      - Calculator: org.gnome.Calculator
+      #      - Calendar: org.gnome.Calendar
+      #      - Characters: org.gnome.Characters
+      #      - Cheese: org.gnome.Cheese
+      #      - Clocks: org.gnome.clocks
+      #      - Connections: org.gnome.Connections
+      #      - Contacts: org.gnome.Contacts
+      #      - Disk Usage Analyzer: org.gnome.baobab
+      #      - Document Scanner: org.gnome.SimpleScan
+      #      - Document Viewer: org.gnome.Evince
+      #      - Extension Manager: com.mattjakeman.ExtensionManager
+      #      - Font Viewer: org.gnome.font-viewer
+      #      - Image Viewer: org.gnome.eog
+      #      - Logs: org.gnome.Logs
+      #      - Maps: org.gnome.Maps
+      #      - Photos (Organizer): org.gnome.Photos
+      #      - Sushi (Nautilus Previewer): org.gnome.NautilusPreviewer
+      #      - Text Editor: org.gnome.TextEditor
+      #      - Videos (Player): org.gnome.Totem
+      #      - Weather: org.gnome.Weather
         System Apps:
           description: System applications for all desktop environments.
           default: true
@@ -86,6 +86,7 @@ screens:
             - Flatseal (Permission Manager): com.github.tchx84.Flatseal
             - Font Downloader: org.gustavoperedo.FontDownloader
             - Mozilla Firefox: org.mozilla.firefox
+            - Nyrna (Suspend Apps / Games): codes.merritt.Nyrna
         Web Browsers:
           description: Additional browsers to complement or replace Firefox.
           default: false
@@ -93,20 +94,57 @@ screens:
             - Brave: com.brave.Browser
             - Google Chrome: com.google.Chrome
             - Microsoft Edge: com.microsoft.Edge
+            - Microsoft Edge Dev: com.microsoft.EdgeDev
             - Opera: com.opera.Opera
+            - Tor Browser Launcher: com.github.micahflee.torbrowser-launcher
         Gaming:
           description: "Rock and Stone!"
           default: false
           packages:
             - Bottles: com.usebottles.bottles
-            - Discord: com.discordapp.Discord
-            - GNOME Games: org.gnome.Games
             - Heroic Games Launcher: com.heroicgameslauncher.hgl
+            - Discord: com.discordapp.Discord
+            - Discord-screenaudio (Audio Share Workaround): de.shorsh.discord-screenaudio
+            - Discover (Discord Overlay): io.github.trigg.discover_overlay
             - Steam: com.valvesoftware.Steam
             - Gamescope (Utility): com.valvesoftware.Steam.Utility.gamescope
             - MangoHUD (Utility): org.freedesktop.Platform.VulkanLayer.MangoHud//22.08
             - SteamTinkerLaunch (Utility): com.valvesoftware.Steam.Utility.steamtinkerlaunch
             - Proton Updater for Steam: net.davidotek.pupgui2
+            - SteamGridDB SGDBoop: com.steamgriddb.SGDBoop
+        Emulators:
+          description: Common Emulators.
+          default: false
+          packages:
+            - RetroArch (All-in-One Emulator): org.libretro.RetroArch
+            - RetroDECK (All-in-One Emulator): net.retrodeck.retrodeck
+            - DuckStation (PSOne): org.duckstation.DuckStation
+            - PCSX2 (PS2): net.pcsx2.PCSX2
+            - RPCS3 (PS3): net.rpcs3.RPCS3
+            - PPSSPP (PSP): org.ppsspp.PPSSPP
+            - melonDS (NDS): net.kuribo64.melonDS
+            - DeSmuME (NDS): org.desmume.DeSmuME
+            - Citra (3DS): org.citra_emu.citra
+            - yuzu (Switch): org.yuzu_emu.yuzu
+            - ryujinx (Switch): org.ryujinx.Ryujinx
+            - xemu (Xbox): app.xemu.xemu
+        Media:
+          description: Apps for Managing Media.
+          default: false
+          packages:
+            - VLC (Media Player): org.videolan.VLC
+            - SMPlayer (Media Player like MPC-HC): info.smplayer.SMPlayer
+            - LosslessCut (Trim Audio / Video): no.mifi.losslesscut
+            - HandBrake (Video Transcoder): fr.handbrake.ghb
+            - SoundConverter (Simple Audio Convert): org.soundconverter.SoundConverter
+            - FFaudioConverter (Barch audio converter): com.github.Bleuzen.FFaudioConverter
+            - Kid3 (KDE Audio Metadata Editor): org.kde.kid3
+            - NTag (audio file tag editor): com.github.nrittsti.NTag
+            - Audio Sharing (RTSP Audio Share): de.haeckerfelix.AudioSharing
+            - Converter (Image Resizer / Converter): io.gitlab.adhami3310.Converter
+            - Converseen (Batch Image Converter): net.fasterland.converseen
+            - Curtail (Image Compressor): com.github.huluti.Curtail
+            - NormCap (Screen-capture OCR): com.github.dynobo.normcap
         Office:
           description: Boost your productivity.
           default: false
@@ -126,6 +164,24 @@ screens:
             - Gstreamer for OBS: com.obsproject.Studio.Plugin.Gstreamer
             - Gstreamer VAAPI for OBS: com.obsproject.Studio.Plugin.GStreamerVaapi
             - Boatswain for Streamdeck: com.feaneron.Boatswain
+        My Apps:
+          description: Feng Lengshun Default Apps
+          default: true
+          packages:
+            - Flatseal (Manage Flatpak Permissions): com.github.tchx84.Flatseal
+            - SGDBoop (Arts for Added Non-Steam Games): com.steamgriddb.SGDBoop
+            - Strmio (Netlix-like UI for orrents): com.stremio.Stremio
+            - Bottles (GUI for Wine): com.usebottles.bottles
+            - WPS Office (Best compatibility for MS Office): com.wps.Office
+            - SMPlayer (Media Pplayer like MPC-HC): info.smplayer.SMPlayer
+            - Adwaita-for-Steam (Custom Steam Theme): io.github.Foldex.AdwSteamGtk
+            - Soundux (Soundboard and Mixer): io.github.Soundux
+            - YouTube Downlaoder Plus (ytDownloader): io.github.aandrew_me.ytdn
+            - Wavebox (Containerized Chromium Browser): io.wavebox.Wavebox
+            - Master PDF Editor (Basic PDF Editing): net.codeindustry.MasterPDFEditor
+            - Joplin (Markdown Editor with Sync): net.cozic.joplin_desktop
+            - Upscayl (Image Upscaler): org.upscayl.Upscayl
+            - Muezzin (Prayer Times): io.github.dbchoco.muezzin
 
   final-screen:
     source: yafti.screen.title
@@ -134,7 +190,7 @@ screens:
       icon: "/path/to/icon"
       links:
         - "Install More Applications":
-            run: /usr/bin/gnome-software
+            run: /usr/bin/plasma-discover
         - "Website":
             run: /usr/bin/xdg-open https://ublue.it
         - "Join the Discord Community":
