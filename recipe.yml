@@ -83,6 +83,7 @@ rpm:
     - kate
     - icoutils
     - kio-admin
+    - xwaylandvideobridge
     - applet-window-buttons
 
     # whitesur deps
