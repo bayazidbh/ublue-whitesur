@@ -97,6 +97,7 @@ screens:
             - Microsoft Edge Dev: com.microsoft.EdgeDev
             - Opera: com.opera.Opera
             - Tor Browser Launcher: com.github.micahflee.torbrowser-launcher
+            - Wavebox: io.wavebox.Wavebox
         Gaming:
           description: "Rock and Stone!"
           default: false
@@ -137,7 +138,7 @@ screens:
             - LosslessCut (Trim Audio / Video): no.mifi.losslesscut
             - HandBrake (Video Transcoder): fr.handbrake.ghb
             - SoundConverter (Simple Audio Convert): org.soundconverter.SoundConverter
-            - FFaudioConverter (Barch audio converter): com.github.Bleuzen.FFaudioConverter
+            - FFaudioConverter (Batch audio converter): com.github.Bleuzen.FFaudioConverter
             - Kid3 (KDE Audio Metadata Editor): org.kde.kid3
             - NTag (audio file tag editor): com.github.nrittsti.NTag
             - Audio Sharing (RTSP Audio Share): de.haeckerfelix.AudioSharing
