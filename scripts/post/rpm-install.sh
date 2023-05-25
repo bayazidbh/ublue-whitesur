@@ -6,7 +6,7 @@
 set -oue pipefail
 
 # Your code goes here.
-rpm-ostree install ./rpm/teamviewer_15.42.4.x86_64.rpm
+rpm-ostree install /tmp/scripts/post/rpm/teamviewer_15.42.4.x86_64.rpm
 
 # rpm-ostree install https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm
 # rpm-ostree install https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/post/rpm/epson-inkjet-printer-escpr-1.7.26-1lsb3.2.x86_64.rpm
