@@ -8,21 +8,21 @@ set -oue pipefail
 # Install white-sur themes
 rpm-ostree install glib2-devel sassc libappstream-glib
 
-mkdir -p /tmp/whitesur
+mkdir -p ./whitesur
 
-git clone https://github.com/vinceliuice/WhiteSur-gtk-theme /tmp/whitesur/WhiteSur-gtk-theme
-/tmp/whitesur/WhiteSur-gtk-theme/install.sh -m -i standard -b default
+git clone https://github.com/vinceliuice/WhiteSur-gtk-theme ./whitesur/WhiteSur-gtk-theme
+./whitesur/WhiteSur-gtk-theme/install.sh -m -i standard -b default
 
-git clone https://github.com/vinceliuice/WhiteSur-icon-theme /tmp/whitesur/WhiteSur-icon-theme
-/tmp/whitesur/WhiteSur-icon-theme/install.sh
+git clone https://github.com/vinceliuice/WhiteSur-icon-theme ./whitesur/WhiteSur-icon-theme
+./whitesur/WhiteSur-icon-theme/install.sh
 
-git clone https://github.com/vinceliuice/WhiteSur-kde /tmp/whitesur/WhiteSur-kde
-/tmp/whitesur/WhiteSur-kde/install.sh
-/tmp/whitesur/WhiteSur-kde/sddm/install.sh
+git clone https://github.com/vinceliuice/WhiteSur-kde ./whitesur/WhiteSur-kde
+./whitesur/WhiteSur-kde/install.sh
+./whitesur/WhiteSur-kde/sddm/install.sh
 
-git clone https://github.com/vinceliuice/WhiteSur-cursors /tmp/whitesur/WhiteSur-cursors
-/tmp/whitesur/WhiteSur-cursors/install.sh
+git clone https://github.com/vinceliuice/WhiteSur-cursors ./whitesur/WhiteSur-cursors
+./whitesur/WhiteSur-cursors/install.sh
 
-git clone https://github.com/vinceliuice/Monterey-kde /tmp/whitesur/Monterey-kde
-/tmp/whitesur/Monterey-kde/install.sh
-/tmp/whitesur/Monterey-kde/sddm/install.sh
+git clone https://github.com/vinceliuice/Monterey-kde ./whitesur/Monterey-kde
+./whitesur/Monterey-kde/install.sh
+./whitesur/Monterey-kde/sddm/install.sh
