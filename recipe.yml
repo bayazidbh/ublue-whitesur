@@ -110,7 +110,7 @@ rpm:
     - gamescope
     - gamescope-session
     - mangohud
-    - vkBasalt
+    # - vkBasalt
     - goverlay
     - gstreamer1-plugins-bad-free
     - gameconqueror
@@ -118,8 +118,8 @@ rpm:
     - steamtinkerlaunch
     - xone
     - xpadneo
-    - wine-staging
-    - winetricks
+    # - wine-staging
+    # - winetricks
 
     # other utils
     - python-input-remapper
