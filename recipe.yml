@@ -99,13 +99,11 @@ rpm:
     - applet-window-buttons
 
     # whitesur deps
-    # - glib2-devel
-    # - sassc
-    # - libappstream-glib
+    - glib2-devel
+    - sassc
+    - libappstream-glib
 
     # gaming-utils
-    - mesa
-    - mesa-freeworld
     - corectrl
     - gamemode
     - gamescope
