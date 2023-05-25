@@ -42,8 +42,9 @@ rpm:
   repos:
   # Example (which also demonstrates version number expansion):
   # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%FEDORA_VERSION%/atim-starship-fedora-%FEDORA_VERSION%.repo
+  - https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara/repo/fedora-%FEDORA_VERSION%/gloriouseggroll-nobara-fedora-%FEDORA_VERSION%.repo?arch=x86_64
   - https://copr.fedorainfracloud.org/coprs/sunwire/input-remapper/repo/fedora-%FEDORA_VERSION%/sunwire-input-remapper-fedora-%FEDORA_VERSION%.repo
-  # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/post/rpm/teamviewer.repo
+  - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/post/rpm/teamviewer.repo
 
   # These RPMs will be installed from your enabled repositories (Fedora's own
   # repos, extra "repos" you've added, etc). The installation is automatically
@@ -66,6 +67,15 @@ rpm:
     - fish
 
     # virtualization
+    - virt-install
+    - libvirt-daemon-config-network
+    - libvirt-daemon-kvm
+    - qemu-kvm
+    - virt-manager
+    - virt-viewer
+    - virt-top
+    - libgquestfs-tools
+    - python3libgquestfs
     - gnome-boxes
 
     # network shares
@@ -73,7 +83,7 @@ rpm:
     - nmap
     - wsdd
 
-    # AVIF and HEIF
+    # AVIF and HEIFconfig-network
     - avif-pixbuf-loader
     - heif-pixbuf-loader
     - qt-heif-image-plugin
@@ -88,24 +98,42 @@ rpm:
     - applet-window-buttons
 
     # whitesur deps
-    - glib2-devel
-    - sassc
-    - libappstream-glib
+    # - glib2-devel
+    # - sassc
+    # - libappstream-glib
 
     # gaming-utils
+    - mesa
+    - mesa-freeworld
+    - corectrl
+    - gamemode
     - gamescope
+    - gamescope-session
+    - mangohud
+    - vkBasalt
+    - goverlay
+    - gstreamer1-plugins-bad-free
     - gameconqueror
+    - steam
+    - steamtinkerlaunch
+    - xone
+    - xpadneo
+    - wine-staging
+    - winetricks
 
     # other utils
     - python-input-remapper
+    - waydroid
+    - rocm-meta
+    - obs-studio-gamecapture
     # - teamviewer
 
     # online installs
     # - https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm
-    - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/post/rpm/epson-inkjet-printer-escpr-1.7.26-1lsb3.2.x86_64.rpm
-    - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/post/rpm/epson-printer-utility-1.1.1-1lsb3.2.x86_64.rpm
-    - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/post/rpm/epsonscan2-6.7.61.0-1.x86_64.rpm
-    - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/post/rpm/epsonscan2-non-free-plugin-1.0.0.6-1.x86_64.rpm
+    - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/pre/rpm/epson-inkjet-printer-escpr-1.7.26-1lsb3.2.x86_64.rpm
+    - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/pre/rpm/epson-printer-utility-1.1.1-1lsb3.2.x86_64.rpm
+    - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/pre/rpm/epsonscan2-6.7.61.0-1.x86_64.rpm
+    - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/pre/rpm/epsonscan2-non-free-plugin-1.0.0.6-1.x86_64.rpm
 
 
   # These RPMs will be removed from the system image. This step happens during

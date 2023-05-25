@@ -6,6 +6,8 @@
 set -oue pipefail
 
 # Install white-sur themes
+rpm-ostree install glib2-devel sassc libappstream-glib
+
 mkdir -p /tmp/whitesur
 
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme /tmp/whitesur/WhiteSur-gtk-theme
