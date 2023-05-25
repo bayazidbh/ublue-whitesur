@@ -99,7 +99,7 @@ rpm:
     - python-input-remapper
 
     # online installs
-    - https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm
+    # - https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm
     # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/post/rpm/epson-inkjet-printer-escpr-1.7.26-1lsb3.2.x86_64.rpm
     # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/post/rpm/epson-printer-utility-1.1.1-1lsb3.2.x86_64.rpm
     # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/post/rpm/epsonscan2-6.7.61.0-1.x86_64.rpm
