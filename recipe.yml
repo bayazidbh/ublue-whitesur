@@ -104,6 +104,7 @@ rpm:
     - libappstream-glib
 
     # gaming-utils
+    # - mesa-freeworld
     - corectrl
     - gamemode
     - gamescope
@@ -123,8 +124,8 @@ rpm:
     # other utils
     - python-input-remapper
     - waydroid
-    - rocm-meta
     - obs-studio-gamecapture
+    # - rocm-meta
     # - teamviewer
 
     # online installs
