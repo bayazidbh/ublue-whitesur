@@ -43,8 +43,9 @@ rpm:
   # Example (which also demonstrates version number expansion):
   # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%FEDORA_VERSION%/atim-starship-fedora-%FEDORA_VERSION%.repo
   # - https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara/repo/fedora-%FEDORA_VERSION%/gloriouseggroll-nobara-fedora-%FEDORA_VERSION%.repo
+  # - https://dl.winehq.org/wine-builds/fedora/38/winehq.repo
+
   - https://copr.fedorainfracloud.org/coprs/sunwire/input-remapper/repo/fedora-%FEDORA_VERSION%/sunwire-input-remapper-fedora-%FEDORA_VERSION%.repo
-  - https://dl.winehq.org/wine-builds/fedora/38/winehq.repo
   - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/usr/etc/yum.repos.d/teamviewer.repo
   - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/usr/etc/yum.repos.d/gloriouseggroll-nobara-fedora-38.repo
 
@@ -119,8 +120,8 @@ rpm:
     - steamtinkerlaunch
     - xone
     - xpadneo
-    - winehq-staging
-    - winetricks
+    # - winehq-staging
+    # - winetricks
 
     # other utils
     - python-input-remapper
