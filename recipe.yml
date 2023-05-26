@@ -28,9 +28,9 @@ scripts:
   # "Post" scripts run at the end of the build process.
   post:
     # Automatically runs script files within "scripts/post/".
-    - autorun.sh
+    # - autorun.sh
     # Manually listed scripts.
-    # - example_post.sh
+    - rpm-install.sh
 # Custom RPM configuration.
 # These changes will be integrated into your custom image at the "system level".
 rpm:
@@ -44,7 +44,7 @@ rpm:
   # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%FEDORA_VERSION%/atim-starship-fedora-%FEDORA_VERSION%.repo
   # - https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara/repo/fedora-%FEDORA_VERSION%/gloriouseggroll-nobara-fedora-%FEDORA_VERSION%.repo
   # - https://dl.winehq.org/wine-builds/fedora/38/winehq.repo
-  # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/usr/etc/yum.repos.d/gloriouseggroll-nobara-fedora-38.repo
+  - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/usr/etc/yum.repos.d/gloriouseggroll-nobara-fedora-38.repo
   # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/usr/etc/yum.repos.d/teamviewer.repo
   - https://copr.fedorainfracloud.org/coprs/sunwire/input-remapper/repo/fedora-%FEDORA_VERSION%/sunwire-input-remapper-fedora-%FEDORA_VERSION%.repo
 
@@ -120,11 +120,11 @@ rpm:
     # - winehq-staging
 
     # nobara packages
-    # - gamescope-session
-    # - obs-studio-gamecapture
-    # - steamtinkerlaunch
-    # - xone
-    # - xpadneo
+    - gamescope-session
+    - obs-studio-gamecapture
+    - steamtinkerlaunch
+    - xone
+    - xpadneo
     # - wine-staging
 
     # other utils
