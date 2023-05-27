@@ -106,16 +106,16 @@ rpm:
 
     # gaming-utils
     # - mesa-freeworld
+    # - vkBasalt
     - corectrl
     - gamemode
     - gamescope
     - mangohud
-    # - vkBasalt
     - goverlay
     - gstreamer1-plugins-bad-free
     - gameconqueror
-    - steam
     - steam-devices
+    # - steam
     # - winetricks
     # - winehq-staging
 
