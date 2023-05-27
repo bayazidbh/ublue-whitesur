@@ -113,7 +113,7 @@ rpm:
     # - gstreamer1-plugins-bad-free
     # - steam-devices
     # - steam
-    - winetricks
+    # - winetricks
     - winehq-staging
 
     # nobara packages
