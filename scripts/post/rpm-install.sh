@@ -9,3 +9,12 @@
 rpm-ostree install https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm
 
 # rpm-ostree override replace "/tmp/scripts/post/rpm/steam-1.0.0.78-1.fc38.i686.rpm"
+<<<<<<< HEAD
+=======
+
+# rpm-ostree install https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm
+# rpm-ostree install https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/post/rpm/epson-inkjet-printer-escpr-1.7.26-1lsb3.2.x86_64.rpm
+# rpm-ostree install https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/post/rpm/epson-printer-utility-1.1.1-1lsb3.2.x86_64.rpm
+# rpm-ostree install https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/post/rpm/epsonscan2-6.7.61.0-1.x86_64.rpm
+# rpm-ostree install https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/post/rpm/epsonscan2-non-free-plugin-1.0.0.6-1.x86_64.rpm
+>>>>>>> refs/remotes/origin/live
