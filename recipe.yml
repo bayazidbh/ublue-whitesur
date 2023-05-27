@@ -97,8 +97,8 @@ rpm:
     - kate
     - icoutils
     - kio-admin
-    - xwaylandvideobridge
     - applet-window-buttons
+    # - xwaylandvideobridge
 
     # whitesur deps
     - glib2-devel
