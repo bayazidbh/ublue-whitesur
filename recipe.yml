@@ -44,7 +44,7 @@ rpm:
   # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%FEDORA_VERSION%/atim-starship-fedora-%FEDORA_VERSION%.repo
   - https://copr.fedorainfracloud.org/coprs/sunwire/input-remapper/repo/fedora-%FEDORA_VERSION%/sunwire-input-remapper-fedora-%FEDORA_VERSION%.repo
   - https://dl.winehq.org/wine-builds/fedora/%FEDORA_VERSION%/winehq.repo
-  - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/post/rpm/gloriouseggroll-nobara-fedora-%FEDORA_VERSION%.repo
+  # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/post/rpm/gloriouseggroll-nobara-fedora-%FEDORA_VERSION%.repo
   # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/usr/etc/yum.repos.d/teamviewer.repo
 
   # These RPMs will be installed from your enabled repositories (Fedora's own
@@ -68,16 +68,16 @@ rpm:
     - fish
 
     # virtualization
-    - qemu-kvm
-    - libvirt-daemon-config-network
-    - libvirt-daemon-kvm
-    - virt-install
-    - virt-manager
-    - virt-viewer
-    - virt-top
-    - libguestfs
-    - python3-libguestfs
     - gnome-boxes
+    # - qemu-kvm
+    # - libvirt-daemon-config-network
+    # - libvirt-daemon-kvm
+    # - virt-install
+    # - virt-manager
+    # - virt-viewer
+    # - virt-top
+    # - libguestfs
+    # - python3-libguestfs
 
     # network shares
     - samba
@@ -104,33 +104,32 @@ rpm:
     - libappstream-glib
 
     # gaming-utils
-    # - mesa-freeworld
-    # - vkBasalt
-    - corectrl
     - gamemode
     - gamescope
     - mangohud
     - goverlay
-    - gstreamer1-plugins-bad-free
     - gameconqueror
-    - steam-devices
+    # - corectrl
+    # - gstreamer1-plugins-bad-free
+    # - steam-devices
     # - steam
-    # - winetricks
-    # - winehq-staging
+    - winetricks
+    - winehq-staging
 
     # nobara packages
-    - gamescope-session
-    - obs-studio-gamecapture
-    - steamtinkerlaunch
-    - xone
-    - xpadneo
-    - wine-staging
+    # - mesa-freeworld
+    # - vkBasalt
+    # - gamescope-session
+    # - obs-studio-gamecapture
+    # - steamtinkerlaunch
+    # - xone
+    # - xpadneo
+    # - wine-staging
+    # - rocm-meta
 
     # other utils
     - python-input-remapper
     - waydroid
-    # - rocm-meta
-    # - teamviewer
 
     # online installs
     # - https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm
