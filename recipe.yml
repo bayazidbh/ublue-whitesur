@@ -28,9 +28,9 @@ scripts:
   # "Post" scripts run at the end of the build process.
   post:
     # Automatically runs script files within "scripts/post/".
-    # - autorun.sh
+    - autorun.sh
     # Manually listed scripts.
-    - rpm-install.sh
+    # - rpm-install.sh
 # Custom RPM configuration.
 # These changes will be integrated into your custom image at the "system level".
 rpm:
