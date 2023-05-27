@@ -9,7 +9,7 @@ base-image: ghcr.io/ublue-os/kinoite-main
 # If you use `latest`, you will be automatically updated to the next major
 # Fedora version, assuming the image you're using as your base container
 # builds with the tag (all uBlue images do this).
-fedora-version: 37
+fedora-version: 38
 # This description will be visible in the container metadata.
 description: A starting point for further customization of uBlue images. Make your own! https://ublue.it/making-your-own/
 # These scripts will be executed during the container build.
@@ -43,7 +43,7 @@ rpm:
   # Example (which also demonstrates version number expansion):
   # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%FEDORA_VERSION%/atim-starship-fedora-%FEDORA_VERSION%.repo
   - https://copr.fedorainfracloud.org/coprs/sunwire/input-remapper/repo/fedora-%FEDORA_VERSION%/sunwire-input-remapper-fedora-%FEDORA_VERSION%.repo
-  - https://dl.winehq.org/wine-builds/fedora/%FEDORA_VERSION%/winehq.repo
+  # - https://dl.winehq.org/wine-builds/fedora/%FEDORA_VERSION%/winehq.repo
   # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/post/rpm/gloriouseggroll-nobara-fedora-%FEDORA_VERSION%.repo
   # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/usr/etc/yum.repos.d/teamviewer.repo
 
@@ -114,7 +114,7 @@ rpm:
     # - steam-devices
     # - steam
     # - winetricks
-    - winehq-staging
+    # - winehq-staging
 
     # nobara packages
     # - mesa-freeworld
@@ -133,10 +133,11 @@ rpm:
 
     # online installs
     # - https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm
-    - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/pre/rpm/epson-inkjet-printer-escpr-1.7.26-1lsb3.2.x86_64.rpm
-    - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/pre/rpm/epson-printer-utility-1.1.1-1lsb3.2.x86_64.rpm
-    - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/pre/rpm/epsonscan2-6.7.61.0-1.x86_64.rpm
-    - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/pre/rpm/epsonscan2-non-free-plugin-1.0.0.6-1.x86_64.rpm
+    # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/pre/rpm/epson-inkjet-printer-escpr-1.7.26-1lsb3.2.x86_64.rpm
+    - /tmp/scripts/pre/rpm/epson-inkjet-printer-escpr-1.7.26-1lsb3.2.x86_64.rpm
+    - /tmp/scripts/pre/rpm/epson-printer-utility-1.1.1-1lsb3.2.x86_64.rpm
+    - /tmp/scripts/pre/rpm/epsonscan2-6.7.61.0-1.x86_64.rpm
+    - /tmp/scripts/pre/rpm/epsonscan2-non-free-plugin-1.0.0.6-1.x86_64.rpm
 
 
   # These RPMs will be removed from the system image. This step happens during
