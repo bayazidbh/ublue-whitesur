@@ -2,8 +2,12 @@
 update_info=spectacle_clipboard.upd:clipboard-settings-change,spectacle_rememberregion.upd:spectacle-migrate-rememberregion
 
 [Annotations]
-annotationToolType=5
+annotationToolType=4
+arrowStrokeWidth=7
+ellipseStrokeColor=255,0,4
 rectangleStrokeColor=255,0,0
+textFontColor=255,0,0
+textShadow=false
 
 [General]
 autoSaveImage=true
@@ -12,9 +16,16 @@ onLaunchAction=DoNotTakeScreenshot
 showMagnifier=true
 
 [GuiConfig]
-captureMode=3
+captureMode=0
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/Downloads/e-sign jane.jpg,file:$HOME/Downloads/e-sign jane.jpg
+Recent URLs[$e]=file:$HOME/Downloads/
+detailViewIconSize=16
 
 [Save]
-defaultSaveLocation=file:///home/fenglengshun/Pictures/Storage/Screenshots
-lastSaveLocation=file:///home/fenglengshun/Pictures/Screenshot_20230529_015129.png
-saveFilenameFormat=%Y-%M/Screenshot_%Y%M%D_%H%m%S_%T%2d
+defaultSaveImageFormat=JPG
+defaultSaveLocation=file:///home/fenglengshun/Pictures/Archive/Screenshots/Laptop
+lastSaveAsLocation=file:///home/fenglengshun/Downloads/e-sign jane.jpg
+lastSaveLocation=file:///home/fenglengshun/Pictures/Archive/Screenshots/Laptop/2023-06/Screenshot_20230607_174146-01.jpg
+saveFilenameFormat=%Y-%M/Screenshot_%Y%M%D_%H%m%S_%T-%2d

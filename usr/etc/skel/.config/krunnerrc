@@ -2,6 +2,5 @@
 migrated=true
 
 [Plugins]
-baloosearchEnabled=true
 browserhistoryEnabled=false
 browsertabsEnabled=false

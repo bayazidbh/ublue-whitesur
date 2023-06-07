@@ -2,16 +2,16 @@
 update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed,kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage,kwin.upd:make-translucency-effect-disabled-by-default,kwin.upd:remove-flip-switch-effect,kwin.upd:remove-cover-switch-effect,kwin.upd:remove-cubeslide-effect,kwin.upd:remove-xrender-backend,kwin.upd:enable-scale-effect-by-default,kwin.upd:overview-group-plugin-id,kwin.upd:animation-speed-cleanup,kwin.upd:replace-cascaded-zerocornered
 
 [Desktops]
-Id_1=2285c3ad-31de-4369-bf49-57de3e3c7934
-Id_2=630b584f-e4c7-4601-893e-f025915c7a7b
-Id_3=ae158eb5-5927-4f08-83d7-2da94dae15e1
-Number=3
-Rows=1
+Id_1=41f4eedf-9509-4e8f-a42c-c7aac88ce297
+Id_2=ac8707f9-2fe9-41b1-9da7-2150a097f7fb
+Id_3=c002154e-3995-4ad4-b74c-ea5d06d40850
+Id_4=88e240e7-a6f3-4113-a2fe-51eb6ec23a08
+Number=4
+Rows=2
 
 [Effect-diminactive]
-DimDesktop=true
 DimKeepAbove=true
-Strength=13
+Strength=18
 
 [Effect-overview]
 BorderActivate=1,7
@@ -34,30 +34,31 @@ NightTemperature=3000
 [Plugins]
 desktopchangeosdEnabled=true
 diminactiveEnabled=true
-truely-maximizedEnabled=true
+hide-titlesEnabled=true
+invertEnabled=true
 
 [Script-desktopchangeosd]
-PopupHideDelay=700
+PopupHideDelay=300
+
+[TabBox]
+LayoutName=thumbnail_grid
 
 [Tiling]
-padding=4
+padding=1
 
-[Tiling][61259534-8c13-53fa-ac81-b84d3bf91bc2]
+[Tiling][4656e9c7-29d2-5198-aef7-e64495a298e9]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
-[Tiling][77bc3022-f8ee-58d0-a4ea-b1428d20f599]
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+[Tiling][bd455426-91b5-5aa4-b78c-9e21c3c810ab]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.6171874999999999},{"width":0.3828125}]}
 
 [Windows]
-ElectricBorderCornerRatio=0.2
+ElectricBorders=1
 RollOverDesktops=true
 
 [Xwayland]
 Scale=1
-XwaylandEavesdrops=Combinations
 
 [org.kde.kdecoration2]
 ButtonsOnLeft=XIAN
 ButtonsOnRight=HFM
-library=org.kde.kwin.aurorae
-theme=__aurorae__svg__Monterey-dark

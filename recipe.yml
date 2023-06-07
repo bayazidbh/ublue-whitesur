@@ -96,7 +96,8 @@ rpm:
     - icoutils
     - kio-admin
     - applet-window-buttons
-    # - xwaylandvideobridge
+    - plymouth-kcm
+    - xwaylandvideobridge
 
     # whitesur deps
     - glib2-devel
@@ -130,6 +131,12 @@ rpm:
     # other utils
     - python-input-remapper
     - waydroid
+
+    # fonts
+    - ibm-plex-fonts-all.noarch
+    - liberation-fonts.noarch
+    - mscore-fonts-all.noarch
+    - google-noto-emoji-color-fonts.noarch
 
     # online installs
     # - https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm
