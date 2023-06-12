@@ -21,18 +21,18 @@ screens:
         - run: flatpak remote-delete --system --force fedora
         - run: flatpak remote-delete --user --force fedora
         - run: flatpak remove --system --noninteractive --all
-        - run: flatpak remote-add --if-not-exists --system flathub https://flathub.org/repo/flathub.flatpakrepo
+  #      - run: flatpak remote-add --if-not-exists --system flathub https://flathub.org/repo/flathub.flatpakrepo
         - run: flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
-  check-system-flathub:
-    source: yafti.screen.consent
-    values:
-      title: Missing Flathub Repository (System)
-      condition:
-        run: flatpak remotes --system --columns=name | grep flathub | wc -l | grep '^0$'
-      description: |
-        We have detected that you don't have Flathub's repository on your system. We will now add that repository to your system-wide list.
-      actions:
-        - run: flatpak remote-add --if-not-exists --system flathub https://flathub.org/repo/flathub.flatpakrepo
+  # check-system-flathub:
+  #  source: yafti.screen.consent
+  #  values:
+  #    title: Missing Flathub Repository (System)
+  #    condition:
+  #      run: flatpak remotes --system --columns=name | grep flathub | wc -l | grep '^0$'
+  #    description: |
+  #      We have detected that you don't have Flathub's repository on your system. We will now add that repository to your system-wide list.
+  #    actions:
+  #      - run: flatpak remote-add --if-not-exists --system flathub https://flathub.org/repo/flathub.flatpakrepo
   check-user-flathub:
     source: yafti.screen.consent
     values:
@@ -51,7 +51,7 @@ screens:
       package_manager: yafti.plugin.flatpak
       package_manager_defaults:
         user: true
-        system: false
+        # system: false
       groups:
       #  Core GNOME Apps:
       #    description: Core system applications for the GNOME desktop environment.
@@ -118,7 +118,6 @@ screens:
           default: false
           packages:
             - RetroArch (All-in-One Emulator): org.libretro.RetroArch
-            - RetroDECK (All-in-One Emulator): net.retrodeck.retrodeck
             - DuckStation (PSOne): org.duckstation.DuckStation
             - PCSX2 (PS2): net.pcsx2.PCSX2
             - RPCS3 (PS3): net.rpcs3.RPCS3
@@ -171,10 +170,10 @@ screens:
           packages:
             - Flatseal (Manage Flatpak Permissions): com.github.tchx84.Flatseal
             - SGDBoop (Arts for Added Non-Steam Games): com.steamgriddb.SGDBoop
-            - Strmio (Netlix-like UI for orrents): com.stremio.Stremio
+            - Strmio (Netlix-like UI for torrents): com.stremio.Stremio
             - Bottles (GUI for Wine): com.usebottles.bottles
             - WPS Office (Best compatibility for MS Office): com.wps.Office
-            - SMPlayer (Media Pplayer like MPC-HC): info.smplayer.SMPlayer
+            - SMPlayer (Media Player like MPC-HC): info.smplayer.SMPlayer
             - Adwaita-for-Steam (Custom Steam Theme): io.github.Foldex.AdwSteamGtk
             - Soundux (Soundboard and Mixer): io.github.Soundux
             - YouTube Downlaoder Plus (ytDownloader): io.github.aandrew_me.ytdn
