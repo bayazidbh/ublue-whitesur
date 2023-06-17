@@ -42,8 +42,7 @@ rpm:
   repos:
   # Example (which also demonstrates version number expansion):
   # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%FEDORA_VERSION%/atim-starship-fedora-%FEDORA_VERSION%.repo
-  - https://copr.fedorainfracloud.org/coprs/sunwire/input-remapper/repo/fedora-%FEDORA_VERSION%/sunwire-input-remapper-fedora-%FEDORA_VERSION%.repo
-  # - https://dl.winehq.org/wine-builds/fedora/%FEDORA_VERSION%/winehq.repo
+  - https://dl.winehq.org/wine-builds/fedora/%FEDORA_VERSION%/winehq.repo
   # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/post/rpm/gloriouseggroll-nobara-fedora-%FEDORA_VERSION%.repo
   # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/usr/etc/yum.repos.d/teamviewer.repo
 
@@ -114,8 +113,8 @@ rpm:
     # - gstreamer1-plugins-bad-free
     # - steam-devices
     # - steam
-    # - winetricks
-    # - winehq-staging
+    - winetricks
+    - winehq-staging
 
     # nobara packages
     # - mesa-freeworld
@@ -129,7 +128,7 @@ rpm:
     # - rocm-meta
 
     # other utils
-    - python-input-remapper
+    - input-remapper
     - waydroid
 
     # fonts
@@ -141,6 +140,7 @@ rpm:
     # online installs
     # - https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm
     - https://github.com/shiftkey/desktop/releases/download/release-3.2.1-linux1/GitHubDesktop-linux-3.2.1-linux1.rpm
+    - https://github.com/rustdesk/rustdesk/releases/download/nightly/rustdesk-1.2.0-0.x86_64-fedora28-centos8.rpm
     - /tmp/scripts/pre/rpm/epson-inkjet-printer-escpr-1.7.26-1lsb3.2.x86_64.rpm
     - /tmp/scripts/pre/rpm/epson-printer-utility-1.1.1-1lsb3.2.x86_64.rpm
     - /tmp/scripts/pre/rpm/epsonscan2-6.7.61.0-1.x86_64.rpm
@@ -166,20 +166,46 @@ firstboot:
   # Alternatively, if you've disabled "yafti", you can still install these via
   # the "just setup-flatpaks" command from our "custom.just" template file.
   # This is just an example selection:
-  # flatpaks:
-  #  -  com.github.Eloston.UngoogledChromium
-  #  -  com.github.micahflee.torbrowser-launcher
-  #  -  com.github.tchx84.Flatseal
-  #  -  com.microsoft.EdgeDev
-  #  -  com.steamgriddb.SGDBoop
-  #  -  com.stremio.Stremio
-  #  -  com.usebottles.bottles
-  #  -  com.wps.Office
-  #  -  io.github.Foldex.AdwSteamGtk
-  #  -  io.github.Soundux
-  #  -  io.github.aandrew_me.ytdn
-  #  -  io.wavebox.Wavebox
-  #  -  net.codeindustry.MasterPDFEditor
-  #  -  net.cozic.joplin_desktop
-  #  -  org.ferdium.Ferdium
-  #  -  org.upscayl.Upscayl
+  flatpaks:
+    -  codes.merritt.Nyrna
+    -  com.discordapp.Discord
+    -  com.github.dynobo.normcap
+    -  com.github.huluti.Curtail
+    -  com.github.tchx84.Flatseal
+    -  com.microsoft.EdgeDev
+    -  com.obsproject.Studio
+    -  com.steamgriddb.SGDBoop
+    -  com.stremio.Stremio
+    -  com.usebottles.bottles
+    -  com.valvesoftware.Steam
+    -  com.wps.Office
+    -  de.shorsh.discord-screenaudio
+    -  fr.handbrake.ghb
+    -  info.smplayer.SMPlayer
+    -  io.github.Bavarder.Bavarder
+    -  io.github.Foldex.AdwSteamGtk
+    -  io.github.Soundux
+    -  io.github.aandrew_me.ytdn
+    -  io.github.dbchoco.muezzin
+    -  io.github.trigg.discover_overlay
+    -  io.wavebox.Wavebox
+    -  net.codeindustry.MasterPDFEditor
+    -  net.cozic.joplin_desktop
+    -  net.fasterland.converseen
+    -  net.kuribo64.melonDS
+    -  net.pcsx2.PCSX2
+    -  net.rpcs3.RPCS3
+    -  net.sourceforge.mcomix
+    -  no.mifi.losslesscut
+    -  org.citra_emu.citra
+    -  org.desmume.DeSmuME
+    -  org.duckstation.DuckStation
+    -  org.fedoraproject.MediaWriter
+    -  org.libretro.RetroArch
+    -  org.ppsspp.PPSSPP
+    -  org.ryujinx.Ryujinx
+    -  org.soundconverter.SoundConverter
+    -  org.upscayl.Upscayl
+    -  org.videolan.VLC
+    -  org.yuzu_emu.yuzu
+    -  page.codeberg.Imaginer.Imaginer
