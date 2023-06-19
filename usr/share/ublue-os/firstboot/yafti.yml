@@ -175,13 +175,13 @@ screens:
             - Gstreamer VAAPI for OBS: com.obsproject.Studio.Plugin.GStreamerVaapi
             - Boatswain for Streamdeck: com.feaneron.Boatswain
         Anime Game Launchers:
-         description: Hoyoverse and other game launchers.
+        description: Hoyoverse and other game launchers.
           default: false
           packages:
-            - Genshin Impact: launcher.moe moe.launcher.an-anime-game-launcher
-            - Honkai Impact 3rd: launcher.moe moe.launcher.honkers-launcher
-            - Honkai Star Rail: launcher.moe moe.launcher.the-honkers-railway-launcher
-            - Punishing Gray Raven: launcher.moe moe.launcher.an-anime-borb-launcher
+            - Genshin Impact: moe.launcher.an-anime-game-launcher
+            - Honkai Impact 3rd: moe.launcher.honkers-launcher
+            - Honkai Star Rail: moe.launcher.the-honkers-railway-launcher
+            - Punishing Gray Raven: moe.launcher.an-anime-borb-launcher
         My Apps:
           description: Feng Lengshun Default Apps
           default: true
@@ -219,9 +219,15 @@ screens:
       links:
         - "Install More Applications":
             run: /usr/bin/plasma-discover
-        - "Website":
+        - "Install home-manager for better Nix package management"
+            run: /usr/bin/xdg-open https://github.com/bayazidbh/home-manager
+        - "Browse Nix packages"
+            run: /usr/bin/xdg-open https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=
+        - "Browse An Anime Team's page"
+            run: /usr/bin/xdg-open https://github.com/an-anime-team
+        - "Universal Blue Website":
             run: /usr/bin/xdg-open https://ublue.it
-        - "Join the Discord Community":
+        - "Join the ublue-os Discord Community":
             run: /usr/bin/xdg-open https://discord.gg/XjG48C7VHx
       description: |
         Thanks for trying uBlue, we hope you enjoy it!
