@@ -43,6 +43,16 @@ screens:
         We have detected that you don't have Flathub's repository on your current user account. We will now add that repository to your account.
       actions:
         - run: flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
+  add-moe-launcher-repo:
+    source: yafti.screen.consent
+    values:
+      title: Add an-anime-game-team moe.launcher flatpak remote (User)
+      condition:
+        run: flatpak remotes --user --columns=name | grep launcher.moe | wc -l | grep '^0$'
+      description: |
+        You may also add an-anime-game-team's moe.launcher flatpak remote (user) to add Hoyoverse and other games launcher.
+      actions:
+        - run: flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo && flatpak remote-add --if-not-exists --user launcher.moe https://gol.launcher.moe/gol.launcher.moe.flatpakrepo
   applications:
     source: yafti.screen.package
     values:
@@ -164,6 +174,14 @@ screens:
             - Gstreamer for OBS: com.obsproject.Studio.Plugin.Gstreamer
             - Gstreamer VAAPI for OBS: com.obsproject.Studio.Plugin.GStreamerVaapi
             - Boatswain for Streamdeck: com.feaneron.Boatswain
+        Anime Game Launchers:
+         description: Hoyoverse and other game launchers.
+          default: false
+          packages:
+            - Genshin Impact: launcher.moe moe.launcher.an-anime-game-launcher
+            - Honkai Impact 3rd: launcher.moe moe.launcher.honkers-launcher
+            - Honkai Star Rail: launcher.moe moe.launcher.the-honkers-railway-launcher
+            - Punishing Gray Raven: launcher.moe moe.launcher.an-anime-borb-launcher
         My Apps:
           description: Feng Lengshun Default Apps
           default: true
@@ -181,7 +199,17 @@ screens:
             - Master PDF Editor (Basic PDF Editing): net.codeindustry.MasterPDFEditor
             - Joplin (Markdown Editor with Sync): net.cozic.joplin_desktop
             - Upscayl (Image Upscaler): org.upscayl.Upscayl
-            - Muezzin (Prayer Times): io.github.dbchoco.muezzin
+
+  check-user-nix:
+    source: yafti.screen.consent
+    values:
+      title: Nix not installed
+      condition:
+        run: ls -a $HOME | grep nix | wc -l | grep '^0$'
+      description: |
+        We have detected that you don't have Nix installed. Nix is a next generation declarative and reproducible package manager that can be used to supplement your package source.
+      actions:
+        - run: curl -s https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/installer-scripts/silverblue-nix-installer.sh | bash
 
   final-screen:
     source: yafti.screen.title
