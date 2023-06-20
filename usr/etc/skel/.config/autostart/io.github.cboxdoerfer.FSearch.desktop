@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=FSearch
+Comment=A file search application focusing on performance and advanced features
+Icon=io.github.cboxdoerfer.FSearch
+Exec=~/.nix-profile/bin/fsearch
+Categories=GTK;Utility;Core;
+Keywords=search;fsearch;files;folders;music;video;documents;find;tool;everything;
+StartupNotify=true

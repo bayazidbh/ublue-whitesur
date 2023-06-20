@@ -1,5 +1,6 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
+switch-to-activity-296322e8-6518-47f8-91e5-b3182d780f4a=none,none,Switch to activity "Default"
 switch-to-activity-3744cde8-b873-4503-912e-bb142981c5bc=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
@@ -55,7 +56,7 @@ Increase Opacity=none,,Increase Opacity of Active Window by 5%
 Invert=Meta+Ctrl+I,Meta+Ctrl+I,Toggle Invert Effect
 Invert Screen Colors=none,none,Invert Screen Colors
 InvertWindow=Meta+Ctrl+U,Meta+Ctrl+U,Toggle Invert Effect on Window
-Kill Window=Meta+Ctrl+Esc,Meta+Ctrl+Esc,Kill Window
+Kill Window=Ctrl+Shift+Esc\tMeta+Ctrl+Esc,Meta+Ctrl+Esc,Kill Window
 Move Tablet to Next Output=none,none,Move the tablet to the next output
 MoveMouseToCenter=Meta+F6,Meta+F6,Move Mouse to Center
 MoveMouseToFocus=Meta+F5,Meta+F5,Move Mouse to Focus
@@ -206,11 +207,11 @@ view_zoom_out=Meta+-,Meta+-,Zoom Out
 
 [mediacontrol]
 _k_friendly_name=Media Controller
-mediavolumedown=none,none,Media volume down
-mediavolumeup=none,none,Media volume up
+mediavolumedown=none,,Media volume down
+mediavolumeup=none,,Media volume up
 nextmedia=Media Next,Media Next,Media playback next
 pausemedia=Media Pause,Media Pause,Pause media playback
-playmedia=none,none,Play media playback
+playmedia=none,,Play media playback
 playpausemedia=Media Play,Media Play,Play/Pause media playback
 previousmedia=Media Previous,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback
@@ -222,6 +223,10 @@ _launch=Meta+E,Meta+E,Dolphin
 [org.kde.kate.desktop]
 _k_friendly_name=Kate
 _launch=none,none,Launch Kate
+
+[org.kde.kcalc.desktop]
+_k_friendly_name=KCalc
+_launch=Launch (1),Launch (1),KCalc
 
 [org.kde.konsole.desktop]
 NewTab=none,none,Open a New Tab
@@ -266,7 +271,7 @@ Turn Off Screen=none,none,Turn Off Screen
 _k_friendly_name=Power Management
 
 [plasmashell]
-_k_friendly_name=System Settings
+_k_friendly_name=Plasma
 activate task manager entry 1=Meta+1,Meta+1,Activate Task Manager Entry 1
 activate task manager entry 10=none,Meta+0,Activate Task Manager Entry 10
 activate task manager entry 2=Meta+2,Meta+2,Activate Task Manager Entry 2
@@ -279,6 +284,7 @@ activate task manager entry 8=Meta+8,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
 activate widget 3=Alt+F1,none,Activate Application Launcher Widget
 activate widget 32=Meta+A,none,Activate System Tray Widget
+activate widget 4=none,none,Activate Application Launcher Widget
 activate widget 40=Meta+N,none,Activate Notifications Widget
 activate widget 58=none,none,Activate Panel Widget
 activate widget 59=none,none,Activate Icons-only Task Manager Widget
@@ -300,6 +306,10 @@ stop current activity=Meta+S,Meta+S,Stop Current Activity
 switch to next activity=none,,Switch to Next Activity
 switch to previous activity=none,,Switch to Previous Activity
 toggle do not disturb=Meta+D,,Toggle do not disturb
+
+[restart-plasma.desktop]
+_k_friendly_name=restart-plasma
+_launch=Ctrl+Alt+Del,none,~/.local/bin/restart-plasma
 
 [systemsettings.desktop]
 _k_friendly_name=System Settings
