@@ -1,0 +1,6 @@
+[anydesk]
+name=AnyDesk CentOS - stable
+baseurl=http://rpm.anydesk.com/centos/$releasever/$basearch/
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://keys.anydesk.com/repos/RPM-GPG-KEY
