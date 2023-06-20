@@ -224,7 +224,7 @@ screens:
         - "Browse Nix packages":
             run: /usr/bin/xdg-open https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=
         - "Browse An Anime Team's page":
-            run: /usr/bin/xdg-open https://github.com/an-anime-team
+            run: /usr/bin/xdg-open https://github.com/an-anime-team/flatpak-builds
         - "Universal Blue Website":
             run: /usr/bin/xdg-open https://ublue.it
         - "Join the ublue-os Discord Community":
