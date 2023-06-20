@@ -219,11 +219,11 @@ screens:
       links:
         - "Install More Applications":
             run: /usr/bin/plasma-discover
-        - "Install home-manager for better Nix package management"
+        - "Install home-manager for better Nix package management":
             run: /usr/bin/xdg-open https://github.com/bayazidbh/home-manager
-        - "Browse Nix packages"
+        - "Browse Nix packages":
             run: /usr/bin/xdg-open https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=
-        - "Browse An Anime Team's page"
+        - "Browse An Anime Team's page":
             run: /usr/bin/xdg-open https://github.com/an-anime-team
         - "Universal Blue Website":
             run: /usr/bin/xdg-open https://ublue.it
