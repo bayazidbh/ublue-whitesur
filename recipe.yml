@@ -43,8 +43,8 @@ rpm:
   # Example (which also demonstrates version number expansion):
   # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%FEDORA_VERSION%/atim-starship-fedora-%FEDORA_VERSION%.repo
   - https://dl.winehq.org/wine-builds/fedora/%FEDORA_VERSION%/winehq.repo
-  # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/scripts/post/rpm/gloriouseggroll-nobara-fedora-%FEDORA_VERSION%.repo
   # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/usr/etc/yum.repos.d/teamviewer.repo
+  - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/usr/etc/yum.repos.d/AnyDesk-Fedora.repo
 
   # These RPMs will be installed from your enabled repositories (Fedora's own
   # repos, extra "repos" you've added, etc). The installation is automatically
@@ -68,15 +68,15 @@ rpm:
 
     # virtualization
     - gnome-boxes
-    # - qemu-kvm
-    # - libvirt-daemon-config-network
-    # - libvirt-daemon-kvm
-    # - virt-install
-    # - virt-manager
-    # - virt-viewer
-    # - virt-top
-    # - libguestfs
-    # - python3-libguestfs
+    - qemu-kvm
+    - libvirt-daemon-config-network
+    - libvirt-daemon-kvm
+    - virt-install
+    - virt-manager
+    - virt-viewer
+    - virt-top
+    - libguestfs
+    - python3-libguestfs
 
     # network shares
     - samba
@@ -130,6 +130,7 @@ rpm:
     # other utils
     - input-remapper
     - waydroid
+    - anydesk
 
     # fonts
     - ibm-plex-fonts-all.noarch
@@ -139,6 +140,7 @@ rpm:
 
     # online installs
     # - https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm
+    # - http://rpm.anydesk.com/fedora/x86_64/Packages/anydesk_6.2.1-1_x86_64.rpm
     - https://github.com/shiftkey/desktop/releases/download/release-3.2.1-linux1/GitHubDesktop-linux-3.2.1-linux1.rpm
     - https://github.com/rustdesk/rustdesk/releases/download/nightly/rustdesk-1.2.0-0.x86_64-fedora28-centos8.rpm
     - /tmp/scripts/pre/rpm/epson-inkjet-printer-escpr-1.7.26-1lsb3.2.x86_64.rpm
