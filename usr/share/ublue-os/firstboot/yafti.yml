@@ -175,7 +175,7 @@ screens:
             - Gstreamer VAAPI for OBS: com.obsproject.Studio.Plugin.GStreamerVaapi
             - Boatswain for Streamdeck: com.feaneron.Boatswain
         Anime Game Launchers:
-        description: Hoyoverse and other game launchers.
+          description: Hoyoverse and other game launchers.
           default: false
           packages:
             - Genshin Impact: moe.launcher.an-anime-game-launcher
