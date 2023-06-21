@@ -79,7 +79,7 @@ rpm:
     - python3-libguestfs
 
     # network shares
-    - samba
+    # - samba
     - nmap
     - wsdd
 
