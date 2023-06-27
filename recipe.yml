@@ -116,7 +116,6 @@ rpm:
     # - steam-devices
     # - steam
     # - winetricks
-    # - winehq-staging
 
     # nobara packages
     # - mesa-freeworld
@@ -150,7 +149,10 @@ rpm:
     - /tmp/scripts/pre/rpm/epsonscan2-6.7.61.0-1.x86_64.rpm
     - /tmp/scripts/pre/rpm/epsonscan2-non-free-plugin-1.0.0.6-1.x86_64.rpm
 
-
+  # Create these symlinks ../../usr/lib/opt/[name here] in /opt/[name here] to fix installing packages that add files to /opt while building the image
+  # function defined by optpackages.sh from https://github.com/AuraHerreroRuiz/auraos/blob/live/scripts/pre/optpackages.sh
+  optfix:
+    - winehq-staging
   # These RPMs will be removed from the system image. This step happens during
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
   remove:
