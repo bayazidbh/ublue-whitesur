@@ -49,7 +49,7 @@ rpm:
   # Example (which also demonstrates version number expansion):
   # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%FEDORA_VERSION%/atim-starship-fedora-%FEDORA_VERSION%.repo
   - https://dl.winehq.org/wine-builds/fedora/%FEDORA_VERSION%/winehq.repo
-  # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/usr/etc/yum.repos.d/teamviewer.repo
+  - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/usr/etc/yum.repos.d/teamviewer.repo
   # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/usr/etc/yum.repos.d/AnyDesk-CentOS.repo
 
   # These RPMs will be installed from your enabled repositories (Fedora's own
