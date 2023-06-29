@@ -116,7 +116,7 @@ rpm:
     # - steam-devices
     # - steam
     # - winetricks
-    - winehq-staging
+    # - winehq-staging
 
     # nobara packages
     # - mesa-freeworld
@@ -132,6 +132,7 @@ rpm:
     # other utils
     - input-remapper
     - waydroid
+    # - teamviewer
     # - anydesk
 
     # fonts
@@ -154,6 +155,7 @@ rpm:
   # function defined by optpackages.sh from https://github.com/AuraHerreroRuiz/auraos/blob/live/scripts/pre/optpackages.sh
   optfix:
     - winehq-staging
+    - teamviewer
   # These RPMs will be removed from the system image. This step happens during
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
   remove:
