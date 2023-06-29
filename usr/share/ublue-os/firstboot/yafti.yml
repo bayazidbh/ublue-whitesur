@@ -211,6 +211,35 @@ screens:
       actions:
         - run: curl -s https://raw.githubusercontent.com/dnkmmr69420/nix-installer-scripts/main/installer-scripts/silverblue-nix-installer.sh | bash
 
+  configure-bazzite:
+    source: yafti.screen.package
+    values:
+      title: Configure Bazzite
+      show_terminal: true
+      package_manager: yafti.plugin.run
+      groups:
+        Bazzite Arch Distrobox:
+          description: This will install an Arch distrobox configured for gaming. Steam and Lutris will then be exported.
+          default: true
+          condition:
+            run: distrobox list | grep -v bazzite-arch
+          packages:
+          - Install Bazzite Arch: mkdir -p ~/Documents/container/arch && env SHELL=/bin/zsh distrobox create --image ghcr.io/ublue-os/bazzite-arch --name bazzite-arch --home ~/Documents/container/arch
+          - Export Steam: distrobox-enter -n bazzite-arch -- '  distrobox-export --app steam'
+          - Export Lutris: distrobox-enter -n bazzite-arch -- '  distrobox-export --app lutris'
+          - Export Protontricks: distrobox-enter -n bazzite-arch -- '  distrobox-export --app protontricks'
+          # - Enable Automatic Updates: systemctl enable --user --now distrobox-upgrade-automatic.timer
+        Automatic Duplicate File Removal:
+          description: Flattens duplicate files to take up no more space than a single copy, a considerable space savings for wine prefixes and compatdata
+          default: false
+          packages:
+          - Enable Duperemove: systemctl enable --now duperemove-weekly@$(systemd-escape $HOME).timer
+        Memory Tuning:
+          description: Adjust ZRAM configuration
+          default: false
+          packages:
+          - Disable ZRAM: just zram-off
+
   final-screen:
     source: yafti.screen.title
     values:
@@ -219,8 +248,8 @@ screens:
       links:
         - "Install More Applications":
             run: /usr/bin/plasma-discover
-        - "Install home-manager for better Nix package management":
-            run: /usr/bin/xdg-open https://github.com/bayazidbh/home-manager
+        - "Get fleek for better Nix package management":
+            run: /usr/bin/xdg-open https://getfleek.dev
         - "Browse Nix packages":
             run: /usr/bin/xdg-open https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=
         - "Browse An Anime Team's page":
