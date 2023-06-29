@@ -34,11 +34,17 @@ scripts:
 # Custom RPM configuration.
 # These changes will be integrated into your custom image at the "system level".
 rpm:
+  # Create these symlinks ../../usr/lib/opt/[name here] in /opt/[name here] to fix installing packages that add files to /opt while building the image
+  # function defined by optpackages.sh from https://github.com/AuraHerreroRuiz/auraos/blob/live/scripts/pre/optpackages.sh
+  optfix:
+    - winehq-staging
+    - teamviewer
   # A list of urls of ".repo" files that should be added to your system.
   # This is the proper way to add custom COPR repos to your image.
   # Tip: Use `%FEDORA_VERSION%` instead of static Fedora version numbers,
   # so that your repos automatically use your image's actual Fedora version,
   # which greatly simplifies future maintenance of your custom recipe.
+
   repos:
   # Example (which also demonstrates version number expansion):
   # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%FEDORA_VERSION%/atim-starship-fedora-%FEDORA_VERSION%.repo
@@ -151,11 +157,6 @@ rpm:
     - /tmp/scripts/pre/rpm/epsonscan2-6.7.61.0-1.x86_64.rpm
     - /tmp/scripts/pre/rpm/epsonscan2-non-free-plugin-1.0.0.6-1.x86_64.rpm
 
-  # Create these symlinks ../../usr/lib/opt/[name here] in /opt/[name here] to fix installing packages that add files to /opt while building the image
-  # function defined by optpackages.sh from https://github.com/AuraHerreroRuiz/auraos/blob/live/scripts/pre/optpackages.sh
-  optfix:
-    - winehq-staging
-    - teamviewer
   # These RPMs will be removed from the system image. This step happens during
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
   remove:

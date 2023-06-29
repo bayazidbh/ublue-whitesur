@@ -2,6 +2,16 @@
 
 [![build-ublue](https://github.com/bayazidbh/ublue-kinoite-customized/actions/workflows/build.yml/badge.svg)](https://github.com/bayazidbh/ublue-kinoite-customized/actions/workflows/build.yml)
 
+## Changes
+
+1. Uses WhiteSur-dark theme by default with default layout similar to Unity/Garuda Linux.
+2. Includes the applets Window Buttons, Window Titles, Global Menu, Event Calendar, USwitch, Pager, and Resource Monitor (fork) enabled by default.
+3. Adds/remove the following packages: https://github.com/bayazidbh/ublue-kinoite-customized/blob/live/recipe.yml#L36
+4. Includes the following settings by default: https://github.com/bayazidbh/ublue-kinoite-customized/tree/live/usr/etc
+
+<details><summary>Details</summary>
+<p>
+
 This is a constantly updating template repository for creating [a native container image](https://fedoraproject.org/wiki/Changes/OstreeNativeContainerStable) designed to be customized however you want. GitHub will build your image for you, and then host it for you on [ghcr.io](https://github.com/features/packages). You then just tell your computer to boot off of that image. GitHub keeps 90 days worth image backups for you, thanks Microsoft!
 
 For more info, check out the [uBlue homepage](https://ublue.it/) and the [main uBlue repo](https://github.com/ublue-os/main/)
@@ -79,6 +89,9 @@ Its configuration can be found in `/usr/share/ublue-os/firstboot/yafti.yml` of t
 
 If you want to completely disable yafti, simply set the recipe's `firstboot.yafti` flag to `false`, which then removes all yafti-related files and configurations from your final image. The files in `usr/share/ublue-os/firstboot/` are responsible for automatically running yafti at login, and they will *only* be bundled in your image if `yafti` is enabled in your recipe!
 
+</p>
+</details>
+
 ## Installation
 
 > **Warning**
@@ -98,9 +111,15 @@ sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/bayazidbh/ublue-kinoit
 
 The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
 
+Check the GitHub package page for this repo to check for build dates to use: https://github.com/bayazidbh/ublue-kinoite-customized/pkgs/container/ublue-kinoite-customized
+
 ## Just
 
 The `just` task runner is included in `ublue-os/main`-derived images, and we have provided several template commands which help you perform further customization after first boot.
+
+
+<details><summary>Details</summary>
+<p>
 
 You can merge our template justfiles into your own local configuration. When `just` supports [include directives](https://just.systems/man/en/chapter_52.html), you will instead be able to simply include these paths into your own justfile, without having to copy anything manually.
 
@@ -128,6 +147,9 @@ After doing that, you'll be able to run the following commands:
 - `just update` - Update rpm-ostree, flatpaks, and distroboxes in one command
 
 Check the [just website](https://just.systems) for tips on modifying and adding your own recipes.
+
+</p>
+</details>
 
 ## Verification
 
