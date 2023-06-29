@@ -116,6 +116,7 @@ rpm:
     # - steam-devices
     # - steam
     # - winetricks
+    - winehq-staging
 
     # nobara packages
     # - mesa-freeworld
