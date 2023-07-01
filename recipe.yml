@@ -88,6 +88,8 @@ rpm:
     # network shares
     - samba
     - nmap
+    - samba-winbind
+    - samba-winexe
     - wsdd
 
     # AVIF and HEIF
@@ -138,7 +140,7 @@ rpm:
     # other utils
     - input-remapper
     - waydroid
-    # - teamviewer
+    - teamviewer
     # - anydesk
 
     # fonts
