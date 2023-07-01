@@ -7,4 +7,6 @@
 
 # Your code goes here.
 # make sure usershares have the right group ownership
+groupadd sambashares
+usermod -aG sambashares root
 chown root:sambashares /var/lib/samba/usershares
