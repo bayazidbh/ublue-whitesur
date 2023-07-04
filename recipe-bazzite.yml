@@ -1,0 +1,225 @@
+# This file can only be edited inside the uBlue image's git repository.
+
+# The image will be at "ghcr.io/yourusername/name".
+name: ublue-bazzite-customized
+# The native container image to build on top of.
+# Warning: Non-uBlue images might not work properly, due to missing components.
+base-image: ghcr.io/ublue-os/bazzite
+# What Fedora version to use. Use an explicit version or `latest`.
+# If you use `latest`, you will be automatically updated to the next major
+# Fedora version, assuming the image you're using as your base container
+# builds with the tag (all uBlue images do this).
+fedora-version: latest
+# This description will be visible in the container metadata.
+description: A starting point for further customization of uBlue images. Make your own! https://ublue.it/making-your-own/
+# These scripts will be executed during the container build.
+# Place scripts in the "scripts/" dir and put the corresponding filenames here.
+# Any files that aren't listed here won't be executed automatically, which
+# means that you can place "helper" or "library" scripts in the folder too.
+# You can use "autorun.sh" if you want an automatic runner.
+scripts:
+  # "Pre" scripts run very early in the build, immediately after your custom
+  # repos have been imported (so that you can access those repos if necessary).
+  pre:
+    # Automatically runs script files within "scripts/pre/".
+    - autorun.sh
+    # Manually listed scripts.
+    # - example_pre.sh
+  # "Post" scripts run at the end of the build process.
+  post:
+    # Automatically runs script files within "scripts/post/".
+    - autorun.sh
+    # Manually listed scripts.
+    # - rpm-install.sh
+# Custom RPM configuration.
+# These changes will be integrated into your custom image at the "system level".
+rpm:
+  # Create these symlinks ../../usr/lib/opt/[name here] in /opt/[name here] to fix installing packages that add files to /opt while building the image
+  # function defined by optpackages.sh from https://github.com/AuraHerreroRuiz/auraos/blob/live/scripts/pre/optpackages.sh
+  # optfix:
+  #  - winehq-staging
+  #  - teamviewer
+  # A list of urls of ".repo" files that should be added to your system.
+  # This is the proper way to add custom COPR repos to your image.
+  # Tip: Use `%FEDORA_VERSION%` instead of static Fedora version numbers,
+  # so that your repos automatically use your image's actual Fedora version,
+  # which greatly simplifies future maintenance of your custom recipe.
+
+  repos:
+  # Example (which also demonstrates version number expansion):
+  # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%FEDORA_VERSION%/atim-starship-fedora-%FEDORA_VERSION%.repo
+  # - https://dl.winehq.org/wine-builds/fedora/%FEDORA_VERSION%/winehq.repo
+  # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/usr/etc/yum.repos.d/teamviewer.repo
+  # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/usr/etc/yum.repos.d/AnyDesk-CentOS.repo
+
+  # These RPMs will be installed from your enabled repositories (Fedora's own
+  # repos, extra "repos" you've added, etc). The installation is automatically
+  # performed via rpm-ostree during the image build, and will be pre-installed
+  # at the "system level" in the final image.
+  install:
+    # Needed for yafti (the first boot installer). Remove if you're not using yafti.
+    - python3-pip
+    # GNOME's GTK4 theme, Libadwaita. Already included in Silverblue, but not
+    # other spins. You can remove if you aren't using yafti, but many native
+    # apps and binaries require it, so it's a good idea to always include it
+    # if you ever download or compile any custom software on your machine.
+    - libadwaita
+    # Add your own below:
+    # Example:
+    # - tilix
+    - inxi
+
+    # shell
+    - zsh
+    - fish
+
+    # virtualization
+    - gnome-boxes
+    - qemu-kvm
+    - libvirt-daemon-config-network
+    - libvirt-daemon-kvm
+    - virt-install
+    - virt-manager
+    - virt-viewer
+    - virt-top
+    - libguestfs
+    - python3-libguestfs
+
+    # network shares
+    - samba
+    - nmap
+    - samba-winbind
+    - samba-winexe
+    - wsdd
+
+    # AVIF and HEIF
+    - avif-pixbuf-loader
+    - heif-pixbuf-loader
+    - qt-heif-image-plugin
+    - libheif-freeworld
+    - libheif-tools
+
+    # kde utils
+    - kate
+    - icoutils
+    - kio-admin
+    - applet-window-buttons
+    - plymouth-kcm
+    - kcron
+    - xwaylandvideobridge
+
+    # whitesur deps
+    - glib2-devel
+    - sassc
+    - libappstream-glib
+
+    # gaming-utils
+    - gamemode
+    - gamescope
+    - mangohud
+    - goverlay
+    - gameconqueror
+    # - corectrl
+    # - gstreamer1-plugins-bad-free
+    # - steam-devices
+    # - steam
+    # - winetricks
+    # - winehq-staging
+
+    # nobara packages
+    # - mesa-freeworld
+    # - vkBasalt
+    # - gamescope-session
+    # - obs-studio-gamecapture
+    # - steamtinkerlaunch
+    # - xone
+    # - xpadneo
+    # - wine-staging
+    # - rocm-meta
+
+    # other utils
+    - input-remapper
+    - waydroid
+    # - teamviewer
+    # - anydesk
+
+    # fonts
+    - ibm-plex-fonts-all.noarch
+    - liberation-fonts.noarch
+    - mscore-fonts-all.noarch
+    - google-noto-emoji-color-fonts.noarch
+
+    # online installs
+    - https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm
+    # - http://rpm.anydesk.com/fedora/x86_64/Packages/anydesk_6.2.1-1_x86_64.rpm
+    - https://github.com/Umio-Yasuno/amdgpu_top/releases/download/v0.1.10/amdgpu_top-0.1.10-1.x86_64.rpm
+    - https://github.com/shiftkey/desktop/releases/download/release-3.2.1-linux1/GitHubDesktop-linux-3.2.1-linux1.rpm
+    - https://github.com/rustdesk/rustdesk/releases/download/nightly/rustdesk-1.2.0-0.x86_64-fedora28-centos8.rpm
+    - /tmp/scripts/pre/rpm/epson-inkjet-printer-escpr-1.7.26-1lsb3.2.x86_64.rpm
+    - /tmp/scripts/pre/rpm/epson-printer-utility-1.1.1-1lsb3.2.x86_64.rpm
+    - /tmp/scripts/pre/rpm/epsonscan2-6.7.61.0-1.x86_64.rpm
+    - /tmp/scripts/pre/rpm/epsonscan2-non-free-plugin-1.0.0.6-1.x86_64.rpm
+
+  # These RPMs will be removed from the system image. This step happens during
+  # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
+  remove:
+    # Remove the native firefox (from Fedora) in favor of the Flatpak.
+    - firefox
+    - firefox-langpacks
+
+    # Configuration for the "first boot" experience, which is available after login.
+firstboot:
+  # Whether to embed "yafti" into the OS image and configure it to autostart,
+  # which is the preferred uBlue "first boot" GUI. Set this to "false" if you've
+  # decided to use a different solution instead.
+  # yafti: false
+  # These Flatpaks will be suggested for install after user login, via the yafti
+  # "first boot" GUI. Everything below will be merged into the "yafti.yml" config
+  # on build, in a category named "Custom". If you prefer, you can instead remove
+  # everything below and directly edit "yafti.yml" to have more control.
+  # Alternatively, if you've disabled "yafti", you can still install these via
+  # the "just setup-flatpaks" command from our "custom.just" template file.
+  # This is just an example selection:
+  flatpaks:
+    -  codes.merritt.Nyrna
+    -  com.discordapp.Discord
+    -  com.github.dynobo.normcap
+    -  com.github.huluti.Curtail
+    -  com.github.tchx84.Flatseal
+    -  com.microsoft.EdgeDev
+    -  com.obsproject.Studio
+    -  com.steamgriddb.SGDBoop
+    -  com.stremio.Stremio
+    -  com.usebottles.bottles
+    -  com.valvesoftware.Steam
+    -  com.wps.Office
+    -  de.shorsh.discord-screenaudio
+    -  fr.handbrake.ghb
+    -  info.smplayer.SMPlayer
+    -  io.github.Bavarder.Bavarder
+    -  io.github.Foldex.AdwSteamGtk
+    -  io.github.Soundux
+    -  io.github.aandrew_me.ytdn
+    -  io.github.dbchoco.muezzin
+    -  io.github.trigg.discover_overlay
+    -  io.wavebox.Wavebox
+    -  net.codeindustry.MasterPDFEditor
+    -  net.cozic.joplin_desktop
+    -  net.fasterland.converseen
+    -  net.kuribo64.melonDS
+    -  net.pcsx2.PCSX2
+    -  net.rpcs3.RPCS3
+    -  net.sourceforge.mcomix
+    -  no.mifi.losslesscut
+    -  org.citra_emu.citra
+    -  org.desmume.DeSmuME
+    -  org.duckstation.DuckStation
+    -  org.fedoraproject.MediaWriter
+    -  org.libretro.RetroArch
+    -  org.ppsspp.PPSSPP
+    -  org.ryujinx.Ryujinx
+    -  org.soundconverter.SoundConverter
+    -  org.upscayl.Upscayl
+    -  org.videolan.VLC
+    -  org.yuzu_emu.yuzu
+    -  page.codeberg.Imaginer.Imaginer
