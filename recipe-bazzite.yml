@@ -164,8 +164,8 @@ rpm:
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
   remove:
     # Remove the native firefox (from Fedora) in favor of the Flatpak.
-    - firefox
-    - firefox-langpacks
+    # - firefox
+    # - firefox-langpacks
 
     # Configuration for the "first boot" experience, which is available after login.
 firstboot:
