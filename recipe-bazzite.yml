@@ -37,8 +37,8 @@ rpm:
   # Create these symlinks ../../usr/lib/opt/[name here] in /opt/[name here] to fix installing packages that add files to /opt while building the image
   # function defined by optpackages.sh from https://github.com/AuraHerreroRuiz/auraos/blob/live/scripts/pre/optpackages.sh
   optfix:
-    - winehq-staging
-  #  - teamviewer
+    - wine-staging
+    - teamviewer
   # A list of urls of ".repo" files that should be added to your system.
   # This is the proper way to add custom COPR repos to your image.
   # Tip: Use `%FEDORA_VERSION%` instead of static Fedora version numbers,
@@ -180,46 +180,46 @@ firstboot:
   # Alternatively, if you've disabled "yafti", you can still install these via
   # the "just setup-flatpaks" command from our "custom.just" template file.
   # This is just an example selection:
-  flatpaks:
-    -  codes.merritt.Nyrna
-    -  com.discordapp.Discord
-    -  com.github.dynobo.normcap
-    -  com.github.huluti.Curtail
-    -  com.github.tchx84.Flatseal
-    -  com.microsoft.EdgeDev
-    -  com.obsproject.Studio
-    -  com.steamgriddb.SGDBoop
-    -  com.stremio.Stremio
-    -  com.usebottles.bottles
-    -  com.valvesoftware.Steam
-    -  com.wps.Office
-    -  de.shorsh.discord-screenaudio
-    -  fr.handbrake.ghb
-    -  info.smplayer.SMPlayer
-    -  io.github.Bavarder.Bavarder
-    -  io.github.Foldex.AdwSteamGtk
-    -  io.github.Soundux
-    -  io.github.aandrew_me.ytdn
-    -  io.github.dbchoco.muezzin
-    -  io.github.trigg.discover_overlay
-    -  io.wavebox.Wavebox
-    -  net.codeindustry.MasterPDFEditor
-    -  net.cozic.joplin_desktop
-    -  net.fasterland.converseen
-    -  net.kuribo64.melonDS
-    -  net.pcsx2.PCSX2
-    -  net.rpcs3.RPCS3
-    -  net.sourceforge.mcomix
-    -  no.mifi.losslesscut
-    -  org.citra_emu.citra
-    -  org.desmume.DeSmuME
-    -  org.duckstation.DuckStation
-    -  org.fedoraproject.MediaWriter
-    -  org.libretro.RetroArch
-    -  org.ppsspp.PPSSPP
-    -  org.ryujinx.Ryujinx
-    -  org.soundconverter.SoundConverter
-    -  org.upscayl.Upscayl
-    -  org.videolan.VLC
-    -  org.yuzu_emu.yuzu
-    -  page.codeberg.Imaginer.Imaginer
+  # flatpaks:
+    #  -  codes.merritt.Nyrna
+    #  -  com.discordapp.Discord
+    #  -  com.github.dynobo.normcap
+    #  -  com.github.huluti.Curtail
+    #  -  com.github.tchx84.Flatseal
+    #  -  com.microsoft.EdgeDev
+    #  -  com.obsproject.Studio
+    #  -  com.steamgriddb.SGDBoop
+    #  -  com.stremio.Stremio
+    #  -  com.usebottles.bottles
+    #  -  com.valvesoftware.Steam
+    #  -  com.wps.Office
+    #  -  de.shorsh.discord-screenaudio
+    #  -  fr.handbrake.ghb
+    #  -  info.smplayer.SMPlayer
+    #  -  io.github.Bavarder.Bavarder
+    #  -  io.github.Foldex.AdwSteamGtk
+    #  -  io.github.Soundux
+    #  -  io.github.aandrew_me.ytdn
+    #  -  io.github.dbchoco.muezzin
+    #  -  io.github.trigg.discover_overlay
+    #  -  io.wavebox.Wavebox
+    #  -  net.codeindustry.MasterPDFEditor
+    #  -  net.cozic.joplin_desktop
+    #  -  net.fasterland.converseen
+    #  -  net.kuribo64.melonDS
+    #  -  net.pcsx2.PCSX2
+    #  -  net.rpcs3.RPCS3
+    #  -  net.sourceforge.mcomix
+    #  -  no.mifi.losslesscut
+    #  -  org.citra_emu.citra
+    #  -  org.desmume.DeSmuME
+    #  -  org.duckstation.DuckStation
+    #  -  org.fedoraproject.MediaWriter
+    #  -  org.libretro.RetroArch
+    #  -  org.ppsspp.PPSSPP
+    #  -  org.ryujinx.Ryujinx
+    #  -  org.soundconverter.SoundConverter
+    #  -  org.upscayl.Upscayl
+    #  -  org.videolan.VLC
+    #  -  org.yuzu_emu.yuzu
+    #  -  page.codeberg.Imaginer.Imaginer
