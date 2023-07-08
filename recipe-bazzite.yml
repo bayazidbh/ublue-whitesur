@@ -129,7 +129,7 @@ rpm:
     # - winehq-staging
 
     # nobara packages
-    - mesa-freeworld
+    # - mesa-freeworld
     - vkBasalt
     - gamescope-session
     - obs-studio-gamecapture
