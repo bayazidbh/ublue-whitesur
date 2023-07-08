@@ -6,9 +6,14 @@
 # 192.168.1.10 foo.mydomain.org foo
 # 192.168.1.13 bar.mydomain.org bar
 
+192.168.1.10 home-server
+
+# block mihoyo telemetry
+
 0.0.0.0 overseauspider.yuanshen.com
 0.0.0.0 log-upload-os.hoyoverse.com
-
+0.0.0.0 dump.gamesafe.qq.com
+0.0.0.0 public-data-api.mihoyo.com
 0.0.0.0 log-upload.mihoyo.com
 0.0.0.0 uspider.yuanshen.com
 0.0.0.0 sg-public-data-api.hoyoverse.com
