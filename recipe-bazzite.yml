@@ -51,7 +51,8 @@ rpm:
   # - https://dl.winehq.org/wine-builds/fedora/%FEDORA_VERSION%/winehq.repo
   # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/usr/etc/yum.repos.d/teamviewer.repo
   # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/usr/etc/yum.repos.d/AnyDesk-CentOS.repo
-  - https://raw.githubusercontent.com/bayazidbh/ublue-kinoite-customized/live/scripts/post/rpm/gloriouseggroll-nobara-fedora-%FEDORA_VERSION%.repo
+  - https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara/repo/fedora-%FEDORA_VERSION%/gloriouseggroll-nobara-fedora-%FEDORA_VERSION%.repo
+  - https://raw.githubusercontent.com/bayazidbh/ublue-kinoite-customized/live/scripts/post/rpm/gloriouseggroll-nobara-fedora-%FEDORA_VERSION%-ml.repo
 
   # These RPMs will be installed from your enabled repositories (Fedora's own
   # repos, extra "repos" you've added, etc). The installation is automatically
