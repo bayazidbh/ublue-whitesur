@@ -124,7 +124,7 @@ rpm:
     # - corectrl
     # - gstreamer1-plugins-bad-free
     # - steam-devices
-    - steam
+    # - steam
     - winetricks
     # - winehq-staging
 
@@ -135,9 +135,9 @@ rpm:
     - obs-studio-gamecapture
     - steamtinkerlaunch
     - wine-staging
-    - rocm-meta
-    - steamdeck-kde-presets
-    - steamdeck-kde-themes
+    # - rocm-meta
+    # - steamdeck-kde-presets
+    # - steamdeck-kde-themes
 
     # other utils
     - input-remapper
