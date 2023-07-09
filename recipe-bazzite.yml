@@ -132,7 +132,7 @@ rpm:
     # - mesa-freeworld
     - vkBasalt
     - gamescope-session
-    - obs-studio-gamecapture
+    # - obs-studio-gamecapture
     - steamtinkerlaunch
     - wine-staging
     # - rocm-meta
