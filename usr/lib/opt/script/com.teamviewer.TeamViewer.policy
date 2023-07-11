@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+  <vendor>TeamViewer</vendor>
+  <vendor_url>https://www.teamviewer.com/</vendor_url>
+  <icon_name>teamviewer</icon_name>
+  <action id="com.teamviewer.TeamViewer.options">
+    <description>Change TeamViewer options</description>
+    <description xml:lang="ar">تغيير خيارات برنامج TeamViewer</description>
+    <description xml:lang="bg">Променете опциите на TeamViewer</description>
+    <description xml:lang="cs">Úprava možností programu TeamViewer</description>
+    <description xml:lang="da">Skift TeamViewer-funktioner</description>
+    <description xml:lang="de">TeamViewer Optionen anpassen</description>
+    <description xml:lang="el">Τροποποίηση επιλογών TeamViewer</description>
+    <description xml:lang="es">Cambiar opciones de TeamViewer</description>
+    <description xml:lang="fi">TeamViewerin asetusten vaihto</description>
+    <description xml:lang="fr">Modifier les options TeamViewer</description>
+    <description xml:lang="he">שנה את אפשרויות TeamViewer</description>
+    <description xml:lang="hr">Promijeni TeamViewer opcije</description>
+    <description xml:lang="hu">TeamViewer beállításainak módosítása</description>
+    <description xml:lang="id">Ubah pilihan TeamViewer</description>
+    <description xml:lang="it">Modifica opzioni TeamViewer</description>
+    <description xml:lang="ja">TeamViewerのオプションの変更</description>
+    <description xml:lang="ko">TeamViewer 옵션 변경</description>
+    <description xml:lang="lt">Keisti „TeamViewer“ parinktis</description>
+    <description xml:lang="nl">TeamViewer opties aanpassen</description>
+    <description xml:lang="no">Endre TeamViewer-alternativer</description>
+    <description xml:lang="pl">Zmień opcje TeamViewer</description>
+    <description xml:lang="pt">Alterar opções do TeamViewer</description>
+    <description xml:lang="ro">Schimbare opţiuni TeamViewer</description>
+    <description xml:lang="ru">Изменение опций TeamViewer</description>
+    <description xml:lang="sk">Zmeňte možnosti programu TeamViewer</description>
+    <description xml:lang="sr">Promenite TeamViewer opcije</description>
+    <description xml:lang="sv">Ändra TeamViewer-alternativen</description>
+    <description xml:lang="th">เปลี่ยนตัวเลือกของ TeamViewer</description>
+    <description xml:lang="tr">TeamViewer seçeneklerini değiştir</description>
+    <description xml:lang="uk">Змінити параметри TeamViewer</description>
+    <description xml:lang="vi">Thay đổi tùy chọn TeamViewer</description>
+    <description xml:lang="zh_CN">更改TeamViewer选项</description>
+    <description xml:lang="zh_TW">變更TeamViewer選項</description>
+    <message>Authentication is required to change TeamViewer options</message>
+    <message xml:lang="ar">يلزم المصادقة لتغيير خيارات برنامج TeamViewer</message>
+    <message xml:lang="bg">Автентикацията е необходима за промяната на опциите на TeamViewer</message>
+    <message xml:lang="cs">Pro úpravu možností TeamViewer je nutné ověření</message>
+    <message xml:lang="da">Der kræves identifikation for at ændre TeamViewer-funktioner</message>
+    <message xml:lang="de">Authenifizierung wird benötigt um Optionen für TeamViewer anzupassen</message>
+    <message xml:lang="el">Απαιτείται έλεγχος ταυτότητας για την τροποποίηση των επιλογών TeamViewer</message>
+    <message xml:lang="es">Para modificar las opciones de TeamViewer se necesita autenticación</message>
+    <message xml:lang="fi">TeamViewerin asetusten vaihto edellyttää todennusta järjestelmävalvojana</message>
+    <message xml:lang="fr">Authentification nécessaire pour modifier les options TeamViewer</message>
+    <message xml:lang="he">דרוש אימות כדי לשנות אפשרויות של TeamViewer</message>
+    <message xml:lang="hr">Za promjenu TeamViewer opcija potrebna je autorizacija</message>
+    <message xml:lang="hu">A TeamViewer beállításainak módosításához hitelesítés szükséges.</message>
+    <message xml:lang="id">Proses autentikasi diperlukan untuk mengubah pilihan TeamViewer</message>
+    <message xml:lang="it">L'autenticazione è necessaria per modificare le opzioni TeamViewer</message>
+    <message xml:lang="ja">TeamViewerのオプションを変更するには認証が必要です</message>
+    <message xml:lang="ko">TeamViewer 옵션을 변경하려면 인증이 필요합니다.</message>
+    <message xml:lang="lt">Norint keisti „TeamViewer“ parinktis reikalinga autentifikacija</message>
+    <message xml:lang="nl">Authentificatie is vereist om opties voor TeamViewer aan te passen</message>
+    <message xml:lang="no">Godkjenning er nødvendig for å endre TeamViewer-alternativene</message>
+    <message xml:lang="pl">Uwierzytelnienie jest niezbędne do zmiany opcji programu TeamViewer</message>
+    <message xml:lang="pt">É necessário autenticar para alterar opções do TeamViewer</message>
+    <message xml:lang="ro">Autentificarea este necesară pentru a schimba opţiunile TeamViewer</message>
+    <message xml:lang="ru">Необходима аутентификация для изменения опций TeamViewer</message>
+    <message xml:lang="sk">Na zmenu možností programu TeamViewer je potrebné overenie</message>
+    <message xml:lang="sr">Potrebna je potvrda identiteta za promenu TeamViewer opcija</message>
+    <message xml:lang="sv">Autentisering krävs för att ändra TeamViewer-alternativen</message>
+    <message xml:lang="th">จำเป็นต้องมีการรับรองความถูกต้องเพื่อเปลี่ยนตัวเลือกของ TeamViewer</message>
+    <message xml:lang="tr">TeamViewer seçeneklerini değiştirmek için kimlik doğrulaması gereklidir</message>
+    <message xml:lang="uk">Для зміни параметрів TeamViewer потрібна авторизація</message>
+    <message xml:lang="vi">Yêu cầu xác thực để thay đổi tùy chọn TeamViewer</message>
+    <message xml:lang="zh_CN">更改TeamViewer选项需要身份验证</message>
+    <message xml:lang="zh_TW">要變更TeamViewer選項，您必須先通過驗證</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+  </action>
+  <action id="com.teamviewer.TeamViewer.pkexec.scripts">
+    <description>Execute script as administrator</description>
+    <description xml:lang="ar">تنفيذ البرنامج النصي كمسؤول</description>
+    <description xml:lang="bg">Изпълнение на скрипт като администратор</description>
+    <description xml:lang="cs">Spusťte skript jako správce.</description>
+    <description xml:lang="da">Udfør script som administrator</description>
+    <description xml:lang="de">Skriptausführung als Administrator</description>
+    <description xml:lang="el">Εκτέλεση δέσμης ενεργειών ως διαχειριστής</description>
+    <description xml:lang="es">Ejecute el script como administrador</description>
+    <description xml:lang="fi">Suorita komentosarja järjestelmänvalvojana</description>
+    <description xml:lang="fr">Exécuter le script en tant qu’administrateur</description>
+    <description xml:lang="he">בצע את הסקריפט בתור מנהל מערכת</description>
+    <description xml:lang="hr">Izvršite skriptu kao administrator</description>
+    <description xml:lang="hu">Szkript végrehajtása rendszergazdaként</description>
+    <description xml:lang="id">Jalankan skrip sebagai administrator</description>
+    <description xml:lang="it">Eseguire lo script come amministratore</description>
+    <description xml:lang="ja">管理者としてスクリプトを実効します</description>
+    <description xml:lang="ko">관리자 권한으로 스크립트 실행</description>
+    <description xml:lang="lt">Vykdyti rašmeną administratoriaus teisėmis</description>
+    <description xml:lang="nl">Script als beheerder uitvoeren</description>
+    <description xml:lang="no">Utfør skript som administrator</description>
+    <description xml:lang="pl">Wykonaj skrypt jako administrator</description>
+    <description xml:lang="pt">Execute o script como administrador</description>
+    <description xml:lang="ro">Executați script-ul ca administrator</description>
+    <description xml:lang="ru">Выполнить сценарий как администратор</description>
+    <description xml:lang="sk">Spustite skript ako správca</description>
+    <description xml:lang="sr">Izvršite skriptu kao administrator</description>
+    <description xml:lang="sv">Kör skript som administratör</description>
+    <description xml:lang="th">ดำเนินการสคริปต์ในฐานะผู้ดูแลระบบ</description>
+    <description xml:lang="tr">Komut dosyasını yönetici olarak çalıştırın</description>
+    <description xml:lang="uk">Запустити сценарій від імені адміністратора</description>
+    <description xml:lang="vi">Chạy tệp lệnh với tư cách quản trị viên</description>
+    <description xml:lang="zh_CN">以管理员身份执行脚本</description>
+    <description xml:lang="zh_TW">以管理員身份執行指令碼</description>
+    <message>TeamViewer attempts to run a script as administrator.</message>
+    <message xml:lang="ar">يحاول برنامج TeamViewer تشغيل برنامج نصي كمسؤول.</message>
+    <message xml:lang="bg">TeamViewer се опитва да изпълни скрипт като администратор.</message>
+    <message xml:lang="cs">Program TeamViewer zkouší spustit skript jako správce.</message>
+    <message xml:lang="da">TeamViewer prøver at køre et script som administrator.</message>
+    <message xml:lang="de">TeamViewer versucht ein Skript als Administrator auszuführen.</message>
+    <message xml:lang="el">Το TeamViewer προσπαθεί να εκτελέσει δέσμη ενεργειών ως διαχειριστής.</message>
+    <message xml:lang="es">TeamViewer intente ejecutar un script como administrador.</message>
+    <message xml:lang="fi">TeamViewer yrittää suorittaa komentosarjan järjestelmänvalvojana.</message>
+    <message xml:lang="fr">TeamViewer tente d’exécuter un script en tant qu’administrateur.</message>
+    <message xml:lang="he">TeamViewer מנסה לבצע סקריפט כמנהל מערכת.</message>
+    <message xml:lang="hr">TeamViewer pokušava pokrenuti skriptu kao administrator.</message>
+    <message xml:lang="hu">A TeamViewer egy szkriptet rendszergazdaként próbál futtatni.</message>
+    <message xml:lang="id">TeamViewer berusaha untuk menjalankan skrip sebagai administrator.</message>
+    <message xml:lang="it">TeamViewer tenta di eseguire uno script come amministratore.</message>
+    <message xml:lang="ja">TeamViewerは管理者としてスクリプトを実行します。</message>
+    <message xml:lang="ko">TeamViewer가 관리자 권한으로 스크립트를 실행하려고 합니다.</message>
+    <message xml:lang="lt">TeamViewer bando vykdyti rašmeną administratoriaus teisėmis.</message>
+    <message xml:lang="nl">TeamViewer probeert een script als beheerder uit te voeren.</message>
+    <message xml:lang="no">TeamViewer forsøker å kjøre et skript som administrator.</message>
+    <message xml:lang="pl">TeamViewer próbuje uruchomić skrypt z uprawnieniami administratora.</message>
+    <message xml:lang="pt">O TeamViewer tenta executar um script como administrador.</message>
+    <message xml:lang="ro">TeamViewer Încearcă să ruleze un script în calitate de administrator.</message>
+    <message xml:lang="ru">TeamViewer пытается выполнить сценарий как администратор.</message>
+    <message xml:lang="sk">TeamViewer sa pokúša spustiť skript ako správca.</message>
+    <message xml:lang="sr">TeamViewer pokušava da pokrene skriptu kao administrator.</message>
+    <message xml:lang="sv">TeamViewer försöker köra ett skript som administratör.</message>
+    <message xml:lang="th">TeamViewer ต้องการรันสคริปต์ในฐานะผู้ดูแลระบบ</message>
+    <message xml:lang="tr">TeamViewer yönetici olarak bir komut dosyası çalıştırmayı deniyor.</message>
+    <message xml:lang="uk">TeamViewer намагається запустити сценарій від імені адміністратора.</message>
+    <message xml:lang="vi">TeamViewer ố gắng chạy tập lệnh với tư cách là quản trị viên.</message>
+    <message xml:lang="zh_CN">TeamViewer 尝试以管理员身份运行脚本。</message>
+    <message xml:lang="zh_TW">TeamViewer 嘗試以管理員身份運行指令碼。</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/lib/opt/teamviewer/tv_bin/script/execscript</annotate>
+    <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
+  </action>
+</policyconfig>
