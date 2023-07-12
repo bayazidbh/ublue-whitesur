@@ -36,9 +36,9 @@ scripts:
 rpm:
   # Create these symlinks ../../usr/lib/opt/[name here] in /opt/[name here] to fix installing packages that add files to /opt while building the image
   # function defined by optpackages.sh from https://github.com/AuraHerreroRuiz/auraos/blob/live/scripts/pre/optpackages.sh
-  optfix:
-    - winehq-staging
-    - teamviewer
+  # optfix:
+  #   - winehq-staging
+  #   - teamviewer
   # A list of urls of ".repo" files that should be added to your system.
   # This is the proper way to add custom COPR repos to your image.
   # Tip: Use `%FEDORA_VERSION%` instead of static Fedora version numbers,
