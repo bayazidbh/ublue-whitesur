@@ -76,7 +76,7 @@ rpm:
     - fish
 
     # virtualization
-    - gnome-boxes
+    # - gnome-boxes
     - qemu-kvm
     - libvirt-daemon-config-network
     - libvirt-daemon-kvm
@@ -130,7 +130,7 @@ rpm:
 
     # nobara packages
     # - mesa-freeworld
-    - vkBasalt
+    # - vkBasalt
     - gamescope-session
     # - obs-studio-gamecapture
     - steamtinkerlaunch
@@ -141,7 +141,7 @@ rpm:
 
     # other utils
     - input-remapper
-    - waydroid
+    # - waydroid
     - teamviewer
     # - anydesk
 
