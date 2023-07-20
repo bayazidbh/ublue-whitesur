@@ -131,9 +131,9 @@ rpm:
     # nobara packages
     # - mesa-freeworld
     # - vkBasalt
-    - gamescope-session
+    # - gamescope-session
     # - obs-studio-gamecapture
-    - steamtinkerlaunch
+    # - steamtinkerlaunch
     # - wine-staging
     # - rocm-meta
     # - steamdeck-kde-presets
