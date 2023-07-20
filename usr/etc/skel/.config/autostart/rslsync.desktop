@@ -1,7 +1,0 @@
-[Desktop Entry]
-Exec=~/.nix-profile/bin/rslsync --config ~/.config/rslsync/rslsync.conf
-Icon=
-Name=rslsync
-Path=
-Terminal=False
-Type=Application

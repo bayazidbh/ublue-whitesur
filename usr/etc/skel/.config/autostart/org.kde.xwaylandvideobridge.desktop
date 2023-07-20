@@ -1,8 +1,0 @@
-[Desktop Entry]
-Categories=Qt;KDE;Utility;X-KDE-Utilities-Desktop;
-Exec=xwaylandvideobridge
-GenericName=Share screens and windows to XWayland applications
-Icon=xwaylandvideobridge
-Name=Xwayland Video Bridge
-StartupNotify=false
-Type=Application
