@@ -37,8 +37,8 @@ rpm:
   # Create these symlinks ../../usr/lib/opt/[name here] in /opt/[name here] to fix installing packages that add files to /opt while building the image
   # function defined by optpackages.sh from https://github.com/AuraHerreroRuiz/auraos/blob/live/scripts/pre/optpackages.sh
   # optfix:
-  #   - winehq-staging
-  #   - teamviewer
+  # - wine-staging
+  # - teamviewer
   # A list of urls of ".repo" files that should be added to your system.
   # This is the proper way to add custom COPR repos to your image.
   # Tip: Use `%FEDORA_VERSION%` instead of static Fedora version numbers,
@@ -48,9 +48,12 @@ rpm:
   repos:
   # Example (which also demonstrates version number expansion):
   # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%FEDORA_VERSION%/atim-starship-fedora-%FEDORA_VERSION%.repo
-  # - https://dl.winehq.org/wine-builds/fedora/%FEDORA_VERSION%/winehq.repo
-  # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/usr/etc/yum.repos.d/teamviewer.repo
+  - https://dl.winehq.org/wine-builds/fedora/%FEDORA_VERSION%/winehq.repo
+  - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/usr/etc/yum.repos.d/teamviewer.repo
   # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/usr/etc/yum.repos.d/AnyDesk-CentOS.repo
+  # - https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara/repo/fedora-%FEDORA_VERSION%/gloriouseggroll-nobara-fedora-%FEDORA_VERSION%.repo
+  # - https://raw.githubusercontent.com/bayazidbh/ublue-kinoite-customized/live/scripts/post/rpm/gloriouseggroll-nobara-fedora-%FEDORA_VERSION%-ml.repo
+  - https://download.docker.com/linux/fedora/docker-ce.repo
 
   # These RPMs will be installed from your enabled repositories (Fedora's own
   # repos, extra "repos" you've added, etc). The installation is automatically
@@ -74,7 +77,7 @@ rpm:
     - fish
 
     # virtualization
-    - gnome-boxes
+    # - gnome-boxes
     - qemu-kvm
     - libvirt-daemon-config-network
     - libvirt-daemon-kvm
@@ -84,6 +87,16 @@ rpm:
     - virt-top
     - libguestfs
     - python3-libguestfs
+
+    # docker
+    - gnome-terminal
+    - docker-ce
+    - docker-ce-cli
+    - docker-ce-rootless-extras
+    - containerd.io
+    - docker-buildx-plugin
+    - docker-compose-plugin
+    - https://desktop.docker.com/linux/main/amd64/docker-desktop-4.21.1-x86_64.rpm
 
     # network shares
     - samba
@@ -132,14 +145,14 @@ rpm:
     # - gamescope-session
     # - obs-studio-gamecapture
     # - steamtinkerlaunch
-    # - xone
-    # - xpadneo
     # - wine-staging
     # - rocm-meta
+    # - steamdeck-kde-presets
+    # - steamdeck-kde-themes
 
     # other utils
     - input-remapper
-    - waydroid
+    # - waydroid
     # - teamviewer
     # - anydesk
 
@@ -150,7 +163,7 @@ rpm:
     - google-noto-emoji-color-fonts.noarch
 
     # online installs
-    - https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm
+    # - https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm
     # - http://rpm.anydesk.com/fedora/x86_64/Packages/anydesk_6.2.1-1_x86_64.rpm
     - https://github.com/Umio-Yasuno/amdgpu_top/releases/download/v0.1.10/amdgpu_top-0.1.10-1.x86_64.rpm
     - https://github.com/shiftkey/desktop/releases/download/release-3.2.1-linux1/GitHubDesktop-linux-3.2.1-linux1.rpm

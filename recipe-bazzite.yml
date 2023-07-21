@@ -53,6 +53,7 @@ rpm:
   # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/usr/etc/yum.repos.d/AnyDesk-CentOS.repo
   - https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara/repo/fedora-%FEDORA_VERSION%/gloriouseggroll-nobara-fedora-%FEDORA_VERSION%.repo
   - https://raw.githubusercontent.com/bayazidbh/ublue-kinoite-customized/live/scripts/post/rpm/gloriouseggroll-nobara-fedora-%FEDORA_VERSION%-ml.repo
+  - https://download.docker.com/linux/fedora/docker-ce.repo
 
   # These RPMs will be installed from your enabled repositories (Fedora's own
   # repos, extra "repos" you've added, etc). The installation is automatically
@@ -86,6 +87,16 @@ rpm:
     - virt-top
     - libguestfs
     - python3-libguestfs
+
+    # docker
+    - gnome-terminal
+    - docker-ce
+    - docker-ce-cli
+    - docker-ce-rootless-extras
+    - containerd.io
+    - docker-buildx-plugin
+    - docker-compose-plugin
+    - https://desktop.docker.com/linux/main/amd64/docker-desktop-4.21.1-x86_64.rpm
 
     # network shares
     - samba
@@ -168,7 +179,6 @@ rpm:
     # Remove the native firefox (from Fedora) in favor of the Flatpak.
     # - firefox
     # - firefox-langpacks
-    # - wine-common
 
     # Configuration for the "first boot" experience, which is available after login.
 firstboot:
