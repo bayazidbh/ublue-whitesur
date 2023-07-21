@@ -90,12 +90,12 @@ rpm:
 
     # docker
     - gnome-terminal
-    - docker-ce
-    - docker-ce-cli
-    - docker-ce-rootless-extras
-    - containerd.io
-    - docker-buildx-plugin
-    - docker-compose-plugin
+    # - docker-ce
+    # - docker-ce-cli
+    # - docker-ce-rootless-extras
+    # - containerd.io
+    # - docker-buildx-plugin
+    # - docker-compose-plugin
     - https://desktop.docker.com/linux/main/amd64/docker-desktop-4.21.1-x86_64.rpm
 
     # network shares
