@@ -96,7 +96,7 @@ rpm:
     # - containerd.io
     # - docker-buildx-plugin
     # - docker-compose-plugin
-    - https://desktop.docker.com/linux/main/amd64/docker-desktop-4.21.1-x86_64.rpm
+    # - https://desktop.docker.com/linux/main/amd64/docker-desktop-4.21.1-x86_64.rpm
 
     # network shares
     - samba
@@ -152,7 +152,7 @@ rpm:
 
     # other utils
     - input-remapper
-    # - waydroid
+    - waydroid
     - teamviewer
     # - anydesk
 
