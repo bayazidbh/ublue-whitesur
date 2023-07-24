@@ -1,7 +1,7 @@
 # This file can only be edited inside the uBlue image's git repository.
 
 # The image will be at "ghcr.io/yourusername/name".
-name: ublue-bazzite-customized
+name: ublue-whitesur-bazzite
 # The native container image to build on top of.
 # Warning: Non-uBlue images might not work properly, due to missing components.
 base-image: ghcr.io/ublue-os/bazzite
@@ -37,7 +37,7 @@ rpm:
   # Create these symlinks ../../usr/lib/opt/[name here] in /opt/[name here] to fix installing packages that add files to /opt while building the image
   # function defined by optpackages.sh from https://github.com/AuraHerreroRuiz/auraos/blob/live/scripts/pre/optpackages.sh
   optfix:
-  - wine-staging
+  # - wine-staging
   - teamviewer
   # A list of urls of ".repo" files that should be added to your system.
   # This is the proper way to add custom COPR repos to your image.
@@ -145,7 +145,7 @@ rpm:
     # - gamescope-session
     # - obs-studio-gamecapture
     - steamtinkerlaunch
-    - wine-staging
+    # - wine-staging
     # - rocm-meta
     # - steamdeck-kde-presets
     # - steamdeck-kde-themes

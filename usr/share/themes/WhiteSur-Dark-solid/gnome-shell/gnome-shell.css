@@ -3610,7 +3610,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 #dash {
   margin-top: 8px;
-  padding: 0 8px;
+  padding: 0;
 }
 
 #dash .placeholder {
@@ -3619,24 +3619,32 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   height: 32px;
 }
 
-#dash .overview-icon {
-  padding: 4px;
-  border-radius: 16px;
-}
-
 #dash .app-well-app-running-dot {
   background-color: rgba(255, 255, 255, 0.75);
 }
 
 #dash .dash-background {
-  background-color: rgba(42, 42, 42, 0.6);
+  background-color: rgba(42, 42, 42, 0.25);
   margin-bottom: 12px;
-  padding: 8px;
+  padding: 8px 6px;
   border-radius: 24px;
 }
 
-#dash .dash-item-container .app-well-app, #dash .show-apps {
+#dash .dash-item-container {
+  margin: 0 1px;
+}
+
+#dash .dash-item-container > * {
+  margin: 0;
+}
+
+#dash .dash-item-container .app-well-app, #dash .dash-item-container .show-apps {
   padding: 8px 1px 20px;
+}
+
+#dash .dash-item-container .overview-icon {
+  padding: 4px;
+  border-radius: 16px;
 }
 
 #dash .dash-separator {
@@ -3846,7 +3854,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .quick-toggle > StBoxLayout {
-  spacing: 6px;
+  spacing: 8px;
 }
 
 .quick-toggle.button {
@@ -3854,15 +3862,15 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .quick-toggle > StBoxLayout {
-  padding: 0 8px;
+  padding: 0 10px;
 }
 
 .quick-toggle:ltr > StBoxLayout {
-  padding-left: 10px;
+  padding-left: 12px;
 }
 
 .quick-toggle:rtl > StBoxLayout {
-  padding-right: 10px;
+  padding-right: 12px;
 }
 
 .quick-toggle .quick-toggle-title {
@@ -3888,7 +3896,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .quick-menu-toggle .quick-toggle:ltr > StBoxLayout {
-  padding-right: 6px;
+  padding-right: 8px;
 }
 
 .quick-menu-toggle .quick-toggle:rtl {
@@ -3896,7 +3904,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .quick-menu-toggle .quick-toggle:rtr > StBoxLayout {
-  padding-left: 6px;
+  padding-left: 8px;
 }
 
 .quick-menu-toggle .quick-toggle:ltr:last-child {
@@ -3908,7 +3916,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .quick-menu-toggle .quick-toggle-arrow {
-  padding: 4px 8px;
+  padding: 4px 10px;
   border: none;
   background-color: rgba(255, 255, 255, 0.05) !important;
 }
@@ -4520,7 +4528,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 #dashtodockContainer .dash-background {
-  background-color: rgba(34, 34, 34, 0.85);
+  background-color: rgba(34, 34, 34, 0.675);
   border: 1px solid rgba(0, 0, 0, 0.75);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
 }
@@ -4721,7 +4729,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .cosmic-dock #dock .dash-background {
-  background-color: rgba(34, 34, 34, 0.85);
+  background-color: rgba(34, 34, 34, 0.675);
   border: 1px solid rgba(0, 0, 0, 0.75);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
 }

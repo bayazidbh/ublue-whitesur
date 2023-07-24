@@ -2712,9 +2712,9 @@ StEntry StLabel.hint-text {
 
 /* Top Bar */
 #panel {
-  background-color: rgba(255, 255, 255, 0.33);
+  background-color: rgba(255, 255, 255, 0.155);
   font-weight: normal;
-  color: #363636;
+  color: white;
   font-feature-settings: "tnum";
   transition-duration: 250ms;
   font-size: 9.75pt;
@@ -2725,7 +2725,7 @@ StEntry StLabel.hint-text {
 
 #panel .panel-corner {
   -panel-corner-radius: 0;
-  -panel-corner-background-color: rgba(255, 255, 255, 0.33);
+  -panel-corner-background-color: rgba(255, 255, 255, 0.155);
   -panel-corner-border-width: 2px;
   -panel-corner-border-color: transparent;
   -panel-corner-opacity: 1;
@@ -2736,7 +2736,7 @@ StEntry StLabel.hint-text {
   -natural-hpadding: 12px;
   -minimum-hpadding: 12px;
   font-weight: normal;
-  color: #363636;
+  color: white;
   transition-duration: 150ms;
   border-radius: 6px;
 }
@@ -2752,7 +2752,7 @@ StEntry StLabel.hint-text {
 }
 
 #panel .panel-button, #panel .panel-button:hover, #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
-  text-shadow: none;
+  text-shadow: 0 1px 3px 3px rgba(0, 0, 0, 0.15);
 }
 
 #panel .panel-button .system-status-icon,
@@ -2768,12 +2768,12 @@ StEntry StLabel.hint-text {
 #panel .panel-button:focus .popup-menu-arrow, #panel .panel-button:checked .system-status-icon,
 #panel .panel-button:checked .app-menu-icon > StIcon,
 #panel .panel-button:checked .popup-menu-arrow {
-  icon-shadow: none;
+  icon-shadow: 0 1px 3px 3px rgba(0, 0, 0, 0.15);
 }
 
 #panel .panel-button:hover {
-  color: #363636;
-  background-color: rgba(0, 0, 0, 0.08);
+  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 #panel .panel-button:hover.clock-display {
@@ -2781,12 +2781,12 @@ StEntry StLabel.hint-text {
 }
 
 #panel .panel-button:hover.clock-display .clock {
-  background-color: rgba(0, 0, 0, 0.08);
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
-  background-color: rgba(0, 0, 0, 0.15);
-  color: #363636;
+  background-color: rgba(255, 255, 255, 0.28);
+  color: white;
   box-shadow: none;
 }
 
@@ -2795,11 +2795,11 @@ StEntry StLabel.hint-text {
 }
 
 #panel .panel-button:active.clock-display .clock, #panel .panel-button:overview.clock-display .clock, #panel .panel-button:focus.clock-display .clock, #panel .panel-button:checked.clock-display .clock {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.28);
 }
 
 .unlock-screen #panel .panel-button, .unlock-screen #panel .panel-button:focus, .unlock-screen #panel .panel-button:hover, .unlock-screen #panel .panel-button:active, .login-screen #panel .panel-button, .login-screen #panel .panel-button:focus, .login-screen #panel .panel-button:hover, .login-screen #panel .panel-button:active, .lock-screen #panel .panel-button, .lock-screen #panel .panel-button:focus, .lock-screen #panel .panel-button:hover, .lock-screen #panel .panel-button:active {
-  color: #363636;
+  color: white;
 }
 
 .login-screen #panel .panel-button, .lock-screen #panel .panel-button {
@@ -2879,10 +2879,6 @@ StEntry StLabel.hint-text {
 
 #panel .panel-button#panelActivities:overview {
   background-color: transparent;
-}
-
-#panel .panel-button#panelActivities:overview {
-  background-image: url("assets/activities-white.svg");
 }
 
 #panel Gjs_AggregateMenu.panel-button .system-status-icon,
@@ -3614,7 +3610,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 #dash {
   margin-top: 8px;
-  padding: 0 8px;
+  padding: 0;
 }
 
 #dash .placeholder {
@@ -3623,24 +3619,32 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   height: 32px;
 }
 
-#dash .overview-icon {
-  padding: 4px;
-  border-radius: 16px;
-}
-
 #dash .app-well-app-running-dot {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
 #dash .dash-background {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.15);
   margin-bottom: 12px;
-  padding: 8px;
+  padding: 8px 6px;
   border-radius: 24px;
 }
 
-#dash .dash-item-container .app-well-app, #dash .show-apps {
+#dash .dash-item-container {
+  margin: 0 1px;
+}
+
+#dash .dash-item-container > * {
+  margin: 0;
+}
+
+#dash .dash-item-container .app-well-app, #dash .dash-item-container .show-apps {
   padding: 8px 1px 20px;
+}
+
+#dash .dash-item-container .overview-icon {
+  padding: 4px;
+  border-radius: 16px;
 }
 
 #dash .dash-separator {
@@ -3850,7 +3854,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .quick-toggle > StBoxLayout {
-  spacing: 6px;
+  spacing: 8px;
 }
 
 .quick-toggle.button {
@@ -3858,15 +3862,15 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .quick-toggle > StBoxLayout {
-  padding: 0 8px;
+  padding: 0 10px;
 }
 
 .quick-toggle:ltr > StBoxLayout {
-  padding-left: 10px;
+  padding-left: 12px;
 }
 
 .quick-toggle:rtl > StBoxLayout {
-  padding-right: 10px;
+  padding-right: 12px;
 }
 
 .quick-toggle .quick-toggle-title {
@@ -3892,7 +3896,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .quick-menu-toggle .quick-toggle:ltr > StBoxLayout {
-  padding-right: 6px;
+  padding-right: 8px;
 }
 
 .quick-menu-toggle .quick-toggle:rtl {
@@ -3900,7 +3904,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .quick-menu-toggle .quick-toggle:rtr > StBoxLayout {
-  padding-left: 6px;
+  padding-left: 8px;
 }
 
 .quick-menu-toggle .quick-toggle:ltr:last-child {
@@ -3912,7 +3916,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .quick-menu-toggle .quick-toggle-arrow {
-  padding: 4px 8px;
+  padding: 4px 10px;
   border: none;
   background-color: rgba(0, 0, 0, 0.06) !important;
 }
@@ -4524,7 +4528,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 #dashtodockContainer .dash-background {
-  background-color: rgba(209, 209, 209, 0.33);
+  background-color: rgba(209, 209, 209, 0.48);
   border: 1px solid rgba(0, 0, 0, 0.08);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
 }
@@ -4725,7 +4729,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .cosmic-dock #dock .dash-background {
-  background-color: rgba(209, 209, 209, 0.33);
+  background-color: rgba(209, 209, 209, 0.48);
   border: 1px solid rgba(0, 0, 0, 0.08);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
 }
