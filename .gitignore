@@ -1,3 +1,4 @@
 .idea
 cosign.key
 *.kate-bak
+*.kate-swp
