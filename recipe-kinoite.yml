@@ -146,13 +146,10 @@ rpm:
     # - obs-studio-gamecapture
     # - steamtinkerlaunch
     # - wine-staging
-    # - rocm-meta
-    # - steamdeck-kde-presets
-    # - steamdeck-kde-themes
 
     # other utils
     - input-remapper
-    # - waydroid
+    - waydroid
     # - teamviewer
     # - anydesk
 
@@ -168,8 +165,7 @@ rpm:
     - https://github.com/Umio-Yasuno/amdgpu_top/releases/download/v0.1.10/amdgpu_top-0.1.10-1.x86_64.rpm
     - https://github.com/shiftkey/desktop/releases/download/release-3.2.1-linux1/GitHubDesktop-linux-3.2.1-linux1.rpm
     - https://github.com/rustdesk/rustdesk/releases/download/1.2.1/rustdesk-1.2.1-0.x86_64.rpm
-    - /tmp/scripts/pre/rpm/epson-inkjet-printer-escpr-1.7.26-1lsb3.2.x86_64.rpm
-    - /tmp/scripts/pre/rpm/epson-printer-utility-1.1.1-1lsb3.2.x86_64.rpm
+
     - /tmp/scripts/pre/rpm/epsonscan2-6.7.61.0-1.x86_64.rpm
     - /tmp/scripts/pre/rpm/epsonscan2-non-free-plugin-1.0.0.6-1.x86_64.rpm
 

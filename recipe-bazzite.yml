@@ -146,14 +146,11 @@ rpm:
     # - obs-studio-gamecapture
     - steamtinkerlaunch
     # - wine-staging
-    # - rocm-meta
-    # - steamdeck-kde-presets
-    # - steamdeck-kde-themes
 
     # other utils
     - input-remapper
-    # - waydroid
-    - teamviewer
+    - waydroid
+    # - teamviewer
     # - anydesk
 
     # fonts
@@ -167,9 +164,8 @@ rpm:
     # - http://rpm.anydesk.com/fedora/x86_64/Packages/anydesk_6.2.1-1_x86_64.rpm
     - https://github.com/Umio-Yasuno/amdgpu_top/releases/download/v0.1.10/amdgpu_top-0.1.10-1.x86_64.rpm
     - https://github.com/shiftkey/desktop/releases/download/release-3.2.1-linux1/GitHubDesktop-linux-3.2.1-linux1.rpm
-    - https://github.com/rustdesk/rustdesk/releases/download/1.2.1/rustdesk-1.2.1-0.x86_64.rpm
-    - /tmp/scripts/pre/rpm/epson-inkjet-printer-escpr-1.7.26-1lsb3.2.x86_64.rpm
-    - /tmp/scripts/pre/rpm/epson-printer-utility-1.1.1-1lsb3.2.x86_64.rpm
+    - https://github.com/rustdesk/rustdesk/releases/download/nightly/rustdesk-1.2.2-0.x86_64.rpm
+
     - /tmp/scripts/pre/rpm/epsonscan2-6.7.61.0-1.x86_64.rpm
     - /tmp/scripts/pre/rpm/epsonscan2-non-free-plugin-1.0.0.6-1.x86_64.rpm
 
@@ -185,7 +181,7 @@ firstboot:
   # Whether to embed "yafti" into the OS image and configure it to autostart,
   # which is the preferred uBlue "first boot" GUI. Set this to "false" if you've
   # decided to use a different solution instead.
-  # yafti: false
+  yafti: true
   # These Flatpaks will be suggested for install after user login, via the yafti
   # "first boot" GUI. Everything below will be merged into the "yafti.yml" config
   # on build, in a category named "Custom". If you prefer, you can instead remove
