@@ -1,3 +1,0 @@
-#! /bin/bash
-
-killall plasmashell; kwin --replace & kstart plasmashell & exit

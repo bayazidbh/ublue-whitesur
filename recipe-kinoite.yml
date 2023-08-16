@@ -121,6 +121,11 @@ rpm:
     - kcron
     - xwaylandvideobridge
 
+    # global menu requirements
+    - libdbusmenu
+    - libdbusmenu-gtk3
+    - libdbusmenu-gtk2
+
     # whitesur deps
     - glib2-devel
     - sassc
