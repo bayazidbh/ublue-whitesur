@@ -149,7 +149,7 @@ rpm:
     # - vkBasalt
     # - gamescope-session
     # - obs-studio-gamecapture
-    - steamtinkerlaunch
+    # - steamtinkerlaunch
     # - wine-staging
 
     # other utils
