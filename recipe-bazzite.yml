@@ -71,6 +71,7 @@ rpm:
     # Example:
     # - tilix
     - inxi
+    - power-profiles-daemon
 
     # shell
     - zsh
