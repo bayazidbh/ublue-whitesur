@@ -109,7 +109,7 @@ rpm:
     - avif-pixbuf-loader
     - heif-pixbuf-loader
     - qt-heif-image-plugin
-    - libheif-freeworld
+    # - libheif-freeworld
     - libheif-tools
 
     # kde utils
