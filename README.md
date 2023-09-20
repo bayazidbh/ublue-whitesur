@@ -100,18 +100,36 @@ If you want to completely disable yafti, simply set the recipe's `firstboot.yaft
 To rebase an existing Silverblue/Kinoite installation to the latest build:
 
 ```
-sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/bayazidbh/ublue-kinoite-customized:latest
+sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/bayazidbh/ublue-whitesur-bazzite:latest
+
+OR
+
+sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/bayazidbh/ublue-whitesur-kinoite:latest
 ```
+
+Note that it may first be necessary to switch as unverfied image first to get the verification files:
+
+```
+sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/bayazidbh/ublue-whitesur-bazzite:latest
+
+OR
+
+sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/bayazidbh/ublue-whitesur-bazzite:latest
+```
+
+
 
 This repository builds date tags as well, so if you want to rebase to a particular day's build:
 
 ```
-sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/bayazidbh/ublue-kinoite-customized:20230403
+sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/bayazidbh/ublue-whitesur-bazzite:38-20230919
 ```
 
 The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
 
-Check the GitHub package page for this repo to check for build dates to use: https://github.com/bayazidbh/ublue-kinoite-customized/pkgs/container/ublue-kinoite-customized
+Check the GitHub package page for this repo to check for build dates to use: https://github.com/bayazidbh?tab=packages&repo_name=ublue-whitesur
+
+
 
 ## Just
 
