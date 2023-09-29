@@ -56,7 +56,7 @@ jobs:
     steps:
       # Checkout push-to-registry action GitHub repository
       - name: Checkout Push to Registry action
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Add yq for reading recipe.yml
         uses: mikefarah/yq@v4.35.1
@@ -110,7 +110,7 @@ jobs:
 
       # Build metadata
       - name: Image Metadata
-        uses: docker/metadata-action@v4
+        uses: docker/metadata-action@v5
         id: meta
         with:
           images: |
@@ -165,7 +165,7 @@ jobs:
             --disable-content-trust
 
       - name: Login to GitHub Container Registry
-        uses: docker/login-action@v2
+        uses: docker/login-action@v3
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/live'
         with:
           registry: ghcr.io
@@ -173,7 +173,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       # Sign container
-      - uses: sigstore/cosign-installer@v3.1.1
+      - uses: sigstore/cosign-installer@v3.1.2
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/live'
 
       - name: Sign container image

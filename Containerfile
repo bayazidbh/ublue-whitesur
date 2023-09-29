@@ -1,6 +1,12 @@
 ARG FEDORA_MAJOR_VERSION=38
 ARG BASE_IMAGE_URL=ghcr.io/ublue-os/silverblue-main
 
+ARG IMAGE_NAME="${IMAGE_NAME}"
+ARG IMAGE_VENDOR="bayazidbh"
+ARG BASE_IMAGE_NAME="${BASE_IMAGE_NAME}"
+ARG IMAGE_FLAVOR="${IMAGE_FLAVOR}"
+ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION}"
+
 FROM ${BASE_IMAGE_URL}:${FEDORA_MAJOR_VERSION}
 ARG RECIPE
 
@@ -12,6 +18,9 @@ ARG RECIPE
 # for manual overrides and editing by the machine's admin AFTER installation!
 # See issue #28 (https://github.com/ublue-os/startingpoint/issues/28).
 COPY usr /usr
+
+# Copy image-info.sh for determining image url for auto-update
+COPY image-info.sh /tmp
 
 # Copy the recipe that we're building.
 COPY ${RECIPE} /usr/share/ublue-os/recipe.yml
@@ -26,5 +35,7 @@ COPY scripts /tmp/scripts
 # Run the build script, then clean up temp files and finalize container build.
 RUN chmod +x /tmp/scripts/build.sh && \
         /tmp/scripts/build.sh && \
+        chmod +x /tmp/image-info.sh && \
+        /tmp/image-info.sh && \
         rm -rf /tmp/* /var/* && \
         ostree container commit
