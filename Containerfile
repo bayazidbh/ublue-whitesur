@@ -1,14 +1,14 @@
 ARG FEDORA_MAJOR_VERSION=38
 ARG BASE_IMAGE_URL=ghcr.io/ublue-os/silverblue-main
 
+FROM ${BASE_IMAGE_URL}:${FEDORA_MAJOR_VERSION}
+ARG RECIPE
+
 ARG IMAGE_NAME="${IMAGE_NAME}"
 ARG IMAGE_VENDOR="bayazidbh"
 ARG BASE_IMAGE_NAME="${BASE_IMAGE_NAME}"
 ARG IMAGE_FLAVOR="${IMAGE_FLAVOR}"
 ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION}"
-
-FROM ${BASE_IMAGE_URL}:${FEDORA_MAJOR_VERSION}
-ARG RECIPE
 
 # Copy static configurations and component files.
 # Warning: If you want to place anything in "/etc" of the final image, you MUST
