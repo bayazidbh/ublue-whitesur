@@ -49,6 +49,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        image_flavor: [main]
+        base_image_name: [kinoite]
         recipe:
           - recipe-kinoite.yml
           - recipe-bazzite.yml
@@ -133,7 +135,11 @@ jobs:
           tags: |
             ${{ steps.generate-tags.outputs.alias_tags }}
           build-args: |
+          build-args: |
+            IMAGE_NAME=${{ env.IMAGE_NAME }}
+            IMAGE_FLAVOR=${{ matrix.image_flavor }}
             FEDORA_MAJOR_VERSION=${{ env.FEDORA_MAJOR_VERSION }}
+            BASE_IMAGE_NAME=${{ matrix.base_image_name }}
             BASE_IMAGE_URL=${{ env.BASE_IMAGE_URL }}
             RECIPE=${{ matrix.recipe }}
           labels: ${{ steps.meta.outputs.labels }}
