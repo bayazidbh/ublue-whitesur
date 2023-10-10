@@ -151,7 +151,6 @@ rpm:
     - xdotool
     - wget
     - unzip
-    - pgrep
     - git
     - jq
     - p7zip
