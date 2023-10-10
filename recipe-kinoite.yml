@@ -136,6 +136,7 @@ rpm:
     - mangohud
     - goverlay
     - gameconqueror
+    - mesa-libEGL-devel
     # - corectrl
     # - gstreamer1-plugins-bad-free
     # - steam-devices
