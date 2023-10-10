@@ -145,6 +145,7 @@ rpm:
     # - winehq-staging
 
     # steamtinkerlaunch utils
+    - yad
     - xwininfo
     - xxd
     - xrandr
