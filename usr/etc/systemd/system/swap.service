@@ -3,7 +3,7 @@ Description=Traditional swap file for bazzite
 
 [Service]
 Type=oneshot
-Environment="SWAP_PATH=/var/vm" "SWAP_FILE=swapfile1" "SWAP_SIZE=8G"
+Environment="SWAP_PATH=/var/vm" "SWAP_FILE=swapfile1" "SWAP_SIZE=$(grep MemTotal /proc/meminfo | awk '{print $2 * 1024}')"
 ExecStartPre=-/usr/bin/rm -rf ${SWAP_PATH}
 ExecStartPre=/usr/bin/mkdir -p ${SWAP_PATH}
 ExecStartPre=/usr/sbin/btrfs filesystem mkswapfile ${SWAP_PATH}/${SWAP_FILE} --size ${SWAP_SIZE}
