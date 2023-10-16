@@ -1,3 +1,6 @@
+[Desktop Entry]
+DefaultProfile=zsh.profile
+
 [General]
 Allow Tab Scrolling=true
 Auto Hide Tabs=false
@@ -12,6 +15,8 @@ Modified Notification=false
 Mouse back button action=0
 Mouse forward button action=0
 Output History Limit=100
+Quickopen Filter Mode=0
+Quickopen List Mode=true
 Recent File List Entry Count=10
 Restore Window Configuration=true
 SDI Mode=false
@@ -35,8 +40,8 @@ Tab Middle Click Close Document=true
 Tabbar Tab Limit=0
 
 [KFileDialog Settings]
-Recent Files[$e]=org.kde.spectacle.desktop,file:$HOME/Downloads/Cagliostro and Ladiva - It's What's Inside That Counts.md,file:$HOME/.local/share/plasma_icons/org.kde.spectacle.desktop
-Recent URLs[$e]=file:$HOME/.local/share/plasma_icons/,file:$HOME/Downloads/
+Recent Files[$e]=org.kde.spectacle.desktop,file:///var/home/fenglengshun/pkgs.txt,file:$HOME/.local/share/plasma_icons/org.kde.spectacle.desktop
+Recent URLs[$e]=file:$HOME/.local/share/plasma_icons/,file:$HOME/Downloads/,file:///var/home/fenglengshun/
 detailViewIconSize=16
 
 [KTextEditor Document]
@@ -154,8 +159,8 @@ Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
 [KTextEditor::Search]
-Replace History=*Kidnapper 3:* ,*Kidnapper 2:* ,*Kidnapper 1:* ,*Little Girl:* ,*Young Man:* ,*Cagliostro:* ,*Ladiva:* ,\\\\n\\\\n,,"$PWD/usr/etc/,"$PWD/usr/share/,"/usr/share/,/usr/share/,"$PWD/, ; ,/tmp/whitesur, November , September , 20,\\,\\,[1-9]{2} ,-2023,-2022,RETENSI,Ungoogled Chromium (Wayland), ,flathub-list,list-flathub,$HOME/.var/log/flatpak,$HOME/.var/flatpak-apps.txt,$HOME/.local/share/flatpak/flatpak-apps.txt,$HOME/Documents/Private/Linux/flatpak-apps.txt,<(flatpak list --user --app --columns=application\\,origin | grep flathub | awk '{print $1}'),$HOME/.var,$HOME/,/home/fenglengshun/,\\\\n,',/usr/bin/echo,/usr/bin/chmod,mode = "775",/home/fenglengshun/.local/bin/upscayl-bin/,nwjs-v0.72.0,Exec=env HOME_DIR="/home/fenglengshun/Documents/container/conty" "/home/fenglengshun/.local/bin/conty.sh" --bind /home/fenglengshun/.steam /home/fenglengshun/.steam --bind /home/fenglengshun/.local/share/Steam /home/fenglengshun/.local/share/Steam --bind /home/fenglengshun/Games /home/fenglengshun/Games --bind /home/fenglengshun/.local/share /home/fenglengshun/.local/share --bind /home/fenglengshun/.config /home/fenglengshun/.config --bind /home/fenglengshun/.local/state /home/fenglengshun/.local/state --bind /home/fenglengshun/.cache /home/fenglengshun/.cache --bind /home/fenglengshun/Storage /home/fenglengshun/Storage --bind /home/fenglengshun/Documents /home/fenglengshun/Documents --bind /home/fenglengshun/Downloads /home/fenglengshun/Downloads /bin/brave,chaotic-nix.packages.${pkgs.hostPlatform.system},Exec=/home/fenglengshun/.nix-profile/bin/brave --enable-features=UseOzonePlatform --ozone-platform=wayland,cp -rpfv
-Search History=Kidnapper 3: ,Kidnapper 2: ,Kidnapper 1: ,Little Girl: ,Young Man: ,Cagliostro: ,Ladiva: ,\\\\n,WebContentsForceDark\\,,dark,MY_HOME,"/etc,"/usr/share/,/usr/share/,/usr/share/themes,/usr/share,root,install,"./,./whitesur,build.sh,ssh,file:///home/fenglengshun/.local/share/flatpak/overrides/, Nov , Sep ,-20,\\,[1-9]{2}-,-23,-22,\\,\\\\d+\\\\.\\\\d+S \\\\d+\\\\.\\\\d+E\n,ATP,Ungoogled Chromium,list-flathub,flatpak list --user --app --columns=application\\,origin | grep flathub | awk '{print $1}',$HOME/.var/flatpak,$HOME/.local/share/flatpak/flatpak-apps.txt,$HOME/.local/share/flatpak/flatpak_apps.txt,$HOME/.config/home-manager/flatpak-apps.txt,\\\\,/bin/,/usr/bin/,~/.var,~/.config/home-manager/flatpak-apps.txt,~/.local/share/flatpak/flatpak_apps.txt,~/, ,",echo,chmod,mkdir,mode = "664",/home/fenglengshun/.local/bin/upscayl/,nwjs-v0.75.1,Brave,Exec=brave,Exec,jammy-security\\,jammy-updates\\,now 5.15.0-70.77 amd64 [installed\\,automatic],/now 5.15.0.70.68 amd64 [installed\\,upgradable to: 5.15.0.71.69],Exec=,chaotic-nix.,chaotic-nix,Exec=/nix/store/blxlpvhwawmxsg4ji5bkrv1afwrqf5vk-brave-1.50.114/bin/brave,exec,cp -rfv
+Replace History=\s,eza ,exa ,, = ,],[,*Kidnapper 3:* ,*Kidnapper 2:* ,*Kidnapper 1:* ,*Little Girl:* ,*Young Man:* ,*Cagliostro:* ,*Ladiva:* ,\\\\n\\\\n,"$PWD/usr/etc/,"$PWD/usr/share/,"/usr/share/,/usr/share/,"$PWD/, ; ,/tmp/whitesur, November , September , 20,\\,\\,[1-9]{2} ,-2023,-2022,RETENSI,Ungoogled Chromium (Wayland),flathub-list,list-flathub,$HOME/.var/log/flatpak,$HOME/.var/flatpak-apps.txt,$HOME/.local/share/flatpak/flatpak-apps.txt,$HOME/Documents/Private/Linux/flatpak-apps.txt,<(flatpak list --user --app --columns=application\\,origin | grep flathub | awk '{print $1}'),$HOME/.var,$HOME/,/home/fenglengshun/,\\\\n,',/usr/bin/echo,/usr/bin/chmod,mode = "775",/home/fenglengshun/.local/bin/upscayl-bin/,nwjs-v0.72.0,Exec=env HOME_DIR="/home/fenglengshun/Documents/container/conty" "/home/fenglengshun/.local/bin/conty.sh" --bind /home/fenglengshun/.steam /home/fenglengshun/.steam --bind /home/fenglengshun/.local/share/Steam /home/fenglengshun/.local/share/Steam --bind /home/fenglengshun/Games /home/fenglengshun/Games --bind /home/fenglengshun/.local/share /home/fenglengshun/.local/share --bind /home/fenglengshun/.config /home/fenglengshun/.config --bind /home/fenglengshun/.local/state /home/fenglengshun/.local/state --bind /home/fenglengshun/.cache /home/fenglengshun/.cache --bind /home/fenglengshun/Storage /home/fenglengshun/Storage --bind /home/fenglengshun/Documents /home/fenglengshun/Documents --bind /home/fenglengshun/Downloads /home/fenglengshun/Downloads /bin/brave,chaotic-nix.packages.${pkgs.hostPlatform.system},Exec=/home/fenglengshun/.nix-profile/bin/brave --enable-features=UseOzonePlatform --ozone-platform=wayland,cp -rpfv
+Search History=mang,games,obs,  \t,\\\\,\\\\n,exa ,exa,chaotic,#  ,=,\\\\],\\\\[,docker,Total Installed Size:,Total,PO , (PT Nexwave).pdf,zsh.profile,theme,jack,conty,wire,chaotic-aur/, (Ret-Wall),Steam (Runtime) ,"/home/fenglengshun/.local/bin/conty.sh" steam , /usr/bin/steam-runtime\s
 
 [Kate Print Settings][Margins]
 bottom=3.53

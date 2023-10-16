@@ -546,6 +546,7 @@ StWidget.focused .app-well-app-running-dot {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.calendar .calendar-day,
 .calendar .calendar-day-base {
   font-size: 9pt;
   font-weight: 400;
@@ -559,23 +560,29 @@ StWidget.focused .app-well-app-running-dot {
   font-feature-settings: "tnum";
 }
 
-.calendar .calendar-day-base:hover, .calendar .calendar-day-base:focus {
+.calendar .calendar-day:hover, .calendar .calendar-day:focus,
+.calendar .calendar-day-base:hover,
+.calendar .calendar-day-base:focus {
   background-color: rgba(0, 0, 0, 0.12);
   box-shadow: none !important;
 }
 
+.calendar .calendar-day:active,
 .calendar .calendar-day-base:active {
   color: #424242;
   background-color: rgba(0, 0, 0, 0.2);
   border-color: transparent;
 }
 
+.calendar .calendar-day:selected,
 .calendar .calendar-day-base:selected {
   color: #242424;
   background-color: rgba(0, 0, 0, 0.2);
   border-color: transparent;
+  box-shadow: none !important;
 }
 
+.calendar .calendar-day.calendar-day-heading,
 .calendar .calendar-day-base.calendar-day-heading {
   width: 28px !important;
   height: 22px !important;
@@ -646,9 +653,10 @@ StWidget.focused .app-well-app-running-dot {
   font-weight: bold;
 }
 
+.calendar .calendar-other-month,
 .calendar .calendar-other-month-day {
-  color: rgba(36, 36, 36, 0.45);
-  opacity: 0.5;
+  color: rgba(36, 36, 36, 0.45) !important;
+  opacity: 1;
 }
 
 .calendar .calendar-week-number {
@@ -672,10 +680,12 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 .events-button .events-box {
+  color: #565656;
   spacing: 4px;
 }
 
 .events-button .events-list {
+  color: #565656;
   spacing: 8px;
   text-shadow: none;
 }
@@ -1998,7 +2008,10 @@ StEntry StLabel.hint-text {
   min-height: 32px;
   border-radius: 0;
   transition-duration: 100ms;
+  border: L none;
+  box-shadow: none;
   border-bottom: 2px solid transparent;
+  background-color: transparent;
 }
 
 #LookingGlassDialog .notebook-tab:hover {
@@ -2247,7 +2260,7 @@ StEntry StLabel.hint-text {
 }
 
 .message .message-title {
-  padding-top: 0.35em !important;
+  padding-top: 0.57em;
   font-weight: bold;
 }
 
@@ -2291,7 +2304,7 @@ StEntry StLabel.hint-text {
 }
 
 .message-media-control {
-  margin: 18px 4px !important;
+  margin: 20px 4px !important;
   padding: 8px !important;
   border-radius: 9999px;
   color: #424242;
@@ -2327,16 +2340,16 @@ StEntry StLabel.hint-text {
 
 .media-message-cover-icon {
   icon-size: 32px !important;
-  margin: 0 0 0 4px !important;
+  margin-left: 4px !important;
 }
 
 .media-message-cover-icon:rtl {
-  margin: 0 4px 0 0 !important;
+  margin-right: 4px !important;
 }
 
 .media-message-cover-icon.fallback {
-  icon-size: 16px !important;
-  padding: 8px;
+  icon-size: 32px !important;
+  padding: 4px;
   border: none;
   border-radius: 6px;
   background-color: rgba(0, 0, 0, 0.12);
@@ -2713,7 +2726,7 @@ StEntry StLabel.hint-text {
 /* Top Bar */
 #panel {
   background-color: rgba(255, 255, 255, 0.155);
-  font-weight: normal;
+  font-weight: 500;
   color: white;
   font-feature-settings: "tnum";
   transition-duration: 250ms;
@@ -2735,7 +2748,6 @@ StEntry StLabel.hint-text {
 #panel .panel-button {
   -natural-hpadding: 12px;
   -minimum-hpadding: 12px;
-  font-weight: normal;
   color: white;
   transition-duration: 150ms;
   border-radius: 6px;
@@ -2857,6 +2869,7 @@ StEntry StLabel.hint-text {
 }
 
 #panel .panel-button#panelActivities {
+  -natural-hpadding: 8px;
   background-image: url("assets/activities.svg");
   background-position: center center;
   background-size: 24px 24px;
@@ -2870,6 +2883,14 @@ StEntry StLabel.hint-text {
 
 #panel .panel-button#panelActivities > * {
   width: 32px;
+}
+
+#panel .panel-button#panelActivities StBoxLayout {
+  spacing: 0;
+}
+
+#panel .panel-button#panelActivities .workspace-dot {
+  background-color: transparent;
 }
 
 #panel .panel-button#panelActivities:active, #panel .panel-button#panelActivities:overview, #panel .panel-button#panelActivities:focus, #panel .panel-button#panelActivities:checked {
@@ -3620,7 +3641,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 #dash .app-well-app-running-dot {
-  background-color: rgba(0, 0, 0, 0.75);
+  margin-bottom: 0;
 }
 
 #dash .dash-background {
@@ -4507,6 +4528,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 #dashtodockContainer #dash .app-well-app-running-dot {
+  background-color: rgba(0, 0, 0, 0.75);
   margin-bottom: 0 !important;
 }
 
