@@ -9,7 +9,7 @@ base-image: ghcr.io/ublue-os/bazzite
 # If you use `latest`, you will be automatically updated to the next major
 # Fedora version, assuming the image you're using as your base container
 # builds with the tag (all uBlue images do this).
-fedora-version: latest
+fedora-version: 38
 # This description will be visible in the container metadata.
 description: A starting point for further customization of uBlue images. Make your own! https://ublue.it/making-your-own/
 # These scripts will be executed during the container build.
