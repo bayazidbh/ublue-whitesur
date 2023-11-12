@@ -9,7 +9,7 @@ base-image: ghcr.io/ublue-os/kinoite-main
 # If you use `latest`, you will be automatically updated to the next major
 # Fedora version, assuming the image you're using as your base container
 # builds with the tag (all uBlue images do this).
-fedora-version: 38
+fedora-version: latest
 # This description will be visible in the container metadata.
 description: A starting point for further customization of uBlue images. Make your own! https://ublue.it/making-your-own/
 # These scripts will be executed during the container build.
@@ -48,11 +48,11 @@ rpm:
   repos:
   # Example (which also demonstrates version number expansion):
   # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%FEDORA_VERSION%/atim-starship-fedora-%FEDORA_VERSION%.repo
-  - https://dl.winehq.org/wine-builds/fedora/%FEDORA_VERSION%/winehq.repo
-  - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/usr/etc/yum.repos.d/teamviewer.repo
+  # - https://dl.winehq.org/wine-builds/fedora/%FEDORA_VERSION%/winehq.repo
+  # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/usr/etc/yum.repos.d/teamviewer.repo
   # - https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara/repo/fedora-%FEDORA_VERSION%/gloriouseggroll-nobara-fedora-%FEDORA_VERSION%.repo
   # - https://raw.githubusercontent.com/bayazidbh/ublue-kinoite-customized/live/scripts/post/rpm/gloriouseggroll-nobara-fedora-%FEDORA_VERSION%-ml.repo
-  - https://download.docker.com/linux/fedora/docker-ce.repo
+  # - https://download.docker.com/linux/fedora/docker-ce.repo
 
   # These RPMs will be installed from your enabled repositories (Fedora's own
   # repos, extra "repos" you've added, etc). The installation is automatically
