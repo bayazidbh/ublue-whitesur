@@ -210,7 +210,7 @@ rpm:
     - https://github.com/Umio-Yasuno/amdgpu_top/releases/download/v0.1.10/amdgpu_top-0.1.10-1.x86_64.rpm
     - https://github.com/rustdesk/rustdesk/releases/download/1.2.3/rustdesk-1.2.3-0.x86_64.rpm
     # - https://github.com/LizardByte/Sunshine/releases/download/v0.21.0/sunshine-fedora-38-amd64.rpm
-    # - https://updates.safing.io/latest/linux_amd64/packages/portmaster-installer.rpm
+    - https://updates.safing.io/latest/linux_amd64/packages/portmaster-installer.rpm
 
     - /tmp/scripts/pre/rpm/epsonscan2-6.7.61.0-1.x86_64.rpm
     - /tmp/scripts/pre/rpm/epsonscan2-non-free-plugin-1.0.0.6-1.x86_64.rpm
