@@ -167,25 +167,23 @@ rpm:
     # other utils
     - input-remapper
     - waydroid
+    - kcm-fcitx5
+    - fcitx5-qt6
+    - fcitx5-mozc
     # - teamviewer
 
     # fonts
     - ibm-plex-fonts-all.noarch
     - liberation-fonts.noarch
-
     - twitter-twemoji-fonts
     - lato-fonts
     - fira-code-fonts
-
     - google-noto-sans-cjk-vf-fonts
     - google-noto-sans-mono-cjk-vf-fonts
     - google-noto-serif-cjk-vf-fonts
     - google-noto-color-emoji-fonts
     # - google-noto-emoji-color-fonts.noarch # renamed in f39
 
-    - twitter-twemoji-fonts
-    - lato-fonts
-    - fira-code-fonts
 
     # ROCm drivers
     - rocm-hip
