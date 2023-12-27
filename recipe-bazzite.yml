@@ -31,7 +31,7 @@ scripts:
     - autorun.sh
     # Manually listed scripts.
     # - rpm-install.sh
-    - post/bazzite/rm-steam-shortcut.sh
+    # - post/bazzite/rm-steam-shortcut.sh
 # Custom RPM configuration.
 # These changes will be integrated into your custom image at the "system level".
 rpm:
