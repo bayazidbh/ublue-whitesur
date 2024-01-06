@@ -98,18 +98,18 @@ rpm:
     # - https://desktop.docker.com/linux/main/amd64/docker-desktop-4.21.1-x86_64.rpm
 
     # network shares
-    - samba
-    - nmap
-    - samba-winbind
-    - samba-winexe
-    - wsdd
+    # - samba
+    # - nmap
+    # - samba-winbind
+    # - samba-winexe
+    # - wsdd
 
     # AVIF and HEIF
-    - avif-pixbuf-loader
-    - heif-pixbuf-loader
-    - qt-heif-image-plugin
-    - libheif-freeworld
-    - libheif-tools
+    # - avif-pixbuf-loader
+    # - heif-pixbuf-loader
+    # - qt-heif-image-plugin
+    # - libheif-freeworld
+    # - libheif-tools
 
     # kde utils
     - kate
@@ -144,17 +144,17 @@ rpm:
     # - winehq-staging
 
     # gstreamer
-    - gstreamer1-plugin-libav
-    - gstreamer1-plugin-openh264
-    - gstreamer1-plugins-bad-free-extras
-    - gstreamer1-plugins-bad-free-fluidsynth
-    - gstreamer1-plugins-bad-free-wildmidi
-    - gstreamer1-plugins-bad-free-zbar
-    - gstreamer1-plugins-bad-freeworld
-    - gstreamer1-plugins-good-extras
-    - gstreamer1-plugins-good-gtk
-    - gstreamer1-plugins-good-qt
-    - gstreamer1-plugins-good-qt6
+    # - gstreamer1-plugin-libav
+    # - gstreamer1-plugin-openh264
+    # - gstreamer1-plugins-bad-free-extras
+    # - gstreamer1-plugins-bad-free-fluidsynth
+    # - gstreamer1-plugins-bad-free-wildmidi
+    # - gstreamer1-plugins-bad-free-zbar
+    # - gstreamer1-plugins-bad-freeworld
+    # - gstreamer1-plugins-good-extras
+    # - gstreamer1-plugins-good-gtk
+    # - gstreamer1-plugins-good-qt
+    # - gstreamer1-plugins-good-qt6
 
     # steamtinkerlaunch utils
     - yad
@@ -171,18 +171,18 @@ rpm:
     - ImageMagick
 
     # other utils
+    - tlp
     - input-remapper
     - kcm-fcitx5
     - fcitx5-qt6
     - fcitx5-mozc
     - waydroid
     - duperemove
-    - obs-studio-plugin-vkcapture
+    # - obs-studio-plugin-vkcapture
 
     # fonts
     - ibm-plex-fonts-all.noarch
     - liberation-fonts.noarch
-    - twitter-twemoji-fonts
     - lato-fonts
     - fira-code-fonts
     - google-noto-sans-cjk-vf-fonts
@@ -192,15 +192,15 @@ rpm:
     # - google-noto-emoji-color-fonts.noarch # renamed in f39
 
     # ROCm drivers
-    - rocm-hip
-    - rocm-hip-devel
-    - rocm-opencl
-    - rocm-opencl-devel
-    - rocm-smi-devel
-    - rocm-comgr-devel
-    - rocm-runtime-devel
-    - rocminfo
-    - rocm-clinfo
+    # - rocm-hip
+    # - rocm-hip-devel
+    # - rocm-opencl
+    # - rocm-opencl-devel
+    # - rocm-smi-devel
+    # - rocm-comgr-devel
+    # - rocm-runtime-devel
+    # - rocminfo
+    # - rocm-clinfo
 
     # online installs
     - https://github.com/Umio-Yasuno/amdgpu_top/releases/download/v0.1.10/amdgpu_top-0.1.10-1.x86_64.rpm
