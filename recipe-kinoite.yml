@@ -172,6 +172,7 @@ rpm:
 
     # other utils
     - tlp
+    - tlp-rdw
     - input-remapper
     - kcm-fcitx5
     - fcitx5-qt6
