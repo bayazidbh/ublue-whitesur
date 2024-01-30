@@ -157,6 +157,7 @@ rpm:
     # - gstreamer1-plugins-good-qt6
 
     # steamtinkerlaunch utils
+    - zenity
     - yad
     - xwininfo
     - xxd

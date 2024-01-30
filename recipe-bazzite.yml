@@ -157,6 +157,21 @@ rpm:
     - gstreamer1-plugins-good-qt
     - gstreamer1-plugins-good-qt6
 
+    # steamtinkerlaunch utils
+    - zenity
+    - yad
+    - xwininfo
+    - xxd
+    - xrandr
+    - xprop
+    - xdotool
+    - wget
+    - unzip
+    - git
+    - jq
+    - p7zip
+    - ImageMagick
+
     # nobara packages
     # - vkBasalt
     # - gamescope-session
