@@ -35,7 +35,7 @@ COPY scripts /tmp/scripts
 # Run the build script, then clean up temp files and finalize container build.
 RUN chmod +x /tmp/scripts/build.sh && \
         /tmp/scripts/build.sh && \
-#         chmod +x /tmp/image-info.sh && \
-#         /tmp/image-info.sh && \
+        chmod +x /tmp/image-info.sh && \
+        /tmp/image-info.sh && \
         rm -rf /tmp/* /var/* && \
         ostree container commit
