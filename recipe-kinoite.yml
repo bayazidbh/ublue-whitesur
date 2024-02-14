@@ -47,6 +47,7 @@ rpm:
 
   repos:
   # Example (which also demonstrates version number expansion):
+  - https://copr.fedorainfracloud.org/coprs/jstaf/onedriver/repo/fedora-%FEDORA_VERSION%/jstaf-onedriver-fedora-%FEDORA_VERSION%.repo
   # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%FEDORA_VERSION%/atim-starship-fedora-%FEDORA_VERSION%.repo
   # - https://dl.winehq.org/wine-builds/fedora/%FEDORA_VERSION%/winehq.repo
   # - https://github.com/bayazidbh/ublue-kinoite-customized/raw/live/usr/etc/yum.repos.d/teamviewer.repo
@@ -181,6 +182,8 @@ rpm:
     - waydroid
     - duperemove
     # - obs-studio-plugin-vkcapture
+    - onedrive
+    - onedriver
 
     # fonts
     - ibm-plex-fonts-all.noarch
