@@ -139,11 +139,7 @@ rpm:
     - mangohud
     - goverlay
     - gameconqueror
-    # - corectrl
-    # - steam-devices
-    # - steam
-    # - winetricks
-    # - winehq-staging
+    - corectrl
 
     # gstreamer
     - gstreamer1-plugin-libav
