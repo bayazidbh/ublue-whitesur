@@ -52,7 +52,7 @@ jobs:
         image_flavor: [main]
         base_image_name: [kinoite]
         recipe:
-          - recipe-kinoite.yml
+          - recipe-aurora.yml
           - recipe-bazzite.yml
 
     steps:
