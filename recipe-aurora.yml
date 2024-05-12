@@ -9,7 +9,7 @@ base-image: ghcr.io/nihaiden/aurora-dx
 # If you use `latest`, you will be automatically updated to the next major
 # Fedora version, assuming the image you're using as your base container
 # builds with the tag (all uBlue images do this).
-fedora-version: latest
+fedora-version: 39
 # This description will be visible in the container metadata.
 description: The ultimate developer workstation, based on KDE. WhiteSur-themed with Unity UX. https://github.com/NiHaiden/aurora
 # These scripts will be executed during the container build.
@@ -210,8 +210,8 @@ rpm:
     # - https://github.com/quexten/goldwarden/releases/download/v0.2.10/goldwarden-0.2.10-1.el7.x86_64.rpm
     # - https://github.com/LizardByte/Sunshine/releases/download/v0.21.0/sunshine-fedora-38-amd64.rpm
 
-    - /tmp/scripts/pre/rpm/epsonscan2-6.7.61.0-1.x86_64.rpm
-    - /tmp/scripts/pre/rpm/epsonscan2-non-free-plugin-1.0.0.6-1.x86_64.rpm
+    - /tmp/scripts/pre/rpm/printer/epson/epsonscan2-6.7.61.0-1.x86_64.rpm
+    - /tmp/scripts/pre/rpm/printer/epson/epsonscan2-non-free-plugin-1.0.0.6-1.x86_64.rpm
 
   # These RPMs will be removed from the system image. This step happens during
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
