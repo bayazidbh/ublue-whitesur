@@ -149,7 +149,7 @@ rpm:
     - gstreamer1-plugins-bad-free-fluidsynth
     - gstreamer1-plugins-bad-free-wildmidi
     - gstreamer1-plugins-bad-free-zbar
-    - gstreamer1-plugins-bad-freeworld
+    # - gstreamer1-plugins-bad-freeworld
     - gstreamer1-plugins-good-extras
     - gstreamer1-plugins-good-gtk
     - gstreamer1-plugins-good-qt
