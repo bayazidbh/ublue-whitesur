@@ -139,7 +139,7 @@ rpm:
     - mangohud
     - goverlay
     - gameconqueror
-    - mesa-libEGL-devel
+    # - mesa-libEGL-devel
     - corectrl
 
     # gstreamer
