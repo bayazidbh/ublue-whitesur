@@ -534,7 +534,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: white;
   font-size: 1em;
   padding: 0px;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.25);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 16px rgba(0, 0, 0, 0.24);
 }
 
@@ -1850,15 +1850,13 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .grouped-window-list-thumbnail-menu {
-  padding: 12px 12px 16px;
-  margin: 2px;
-  border-image: url("assets/menu.svg") 20 20 23 20;
+  padding: 6px;
 }
 
 .grouped-window-list-thumbnail-menu .item-box {
-  padding: 6px;
+  padding: 8px;
   border-radius: 6px;
-  spacing: 6px;
+  spacing: 8px;
   margin: 2px;
 }
 
@@ -2158,16 +2156,16 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .workspace-graph .workspace .windows {
-  -active-window-background: rgba(38, 38, 38, 0.15);
+  -active-window-background: rgba(38, 38, 38, 0.25);
   -active-window-border: rgba(0, 0, 0, 0.8);
-  -inactive-window-background: rgba(38, 38, 38, 0.15);
+  -inactive-window-background: rgba(38, 38, 38, 0.25);
   -inactive-window-border: rgba(0, 0, 0, 0.8);
 }
 
 .workspace-graph .workspace:active .windows {
-  -active-window-background: rgba(51, 51, 51, 0.15);
+  -active-window-background: rgba(51, 51, 51, 0.25);
   -active-window-border: rgba(0, 0, 0, 0.8);
-  -inactive-window-background: rgba(13, 13, 13, 0.15);
+  -inactive-window-background: rgba(13, 13, 13, 0.25);
   -inactive-window-border: rgba(0, 0, 0, 0.8);
 }
 
