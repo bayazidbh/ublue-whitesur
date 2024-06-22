@@ -80,6 +80,7 @@ rpm:
 
     # virtualization
     # - gnome-boxes
+    - qemu
     - qemu-kvm
     - libvirt-daemon-config-network
     - libvirt-daemon-kvm
@@ -119,7 +120,6 @@ rpm:
     - icoutils
     - kio-admin
     - applet-window-buttons
-    - plymouth-kcm
     - kcron
     - xwaylandvideobridge
     - plasma-nm-openconnect
@@ -183,7 +183,6 @@ rpm:
     - kcm-fcitx5
     - fcitx5-qt6
     - fcitx5-mozc
-    # - teamviewer
     # - onedrive
     # - onedriver
 
@@ -197,19 +196,17 @@ rpm:
     - google-noto-sans-mono-cjk-vf-fonts
     - google-noto-serif-cjk-vf-fonts
     - google-noto-color-emoji-fonts
-    # - google-noto-emoji-color-fonts.noarch # renamed in f39
-
 
     # ROCm drivers
-    - rocm-hip
-    - rocm-hip-devel
-    - rocm-opencl
-    - rocm-opencl-devel
-    - rocm-smi-devel
-    - rocm-comgr-devel
-    - rocm-runtime-devel
-    - rocminfo
-    - rocm-clinfo
+    # - rocm-hip
+    # - rocm-hip-devel
+    # - rocm-opencl
+    # - rocm-opencl-devel
+    # - rocm-smi-devel
+    # - rocm-comgr-devel
+    # - rocm-runtime-devel
+    # - rocminfo
+    # - rocm-clinfo
 
     # online installs
     - https://github.com/Umio-Yasuno/amdgpu_top/releases/download/v0.1.10/amdgpu_top-0.1.10-1.x86_64.rpm

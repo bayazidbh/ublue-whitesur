@@ -78,6 +78,7 @@ rpm:
 
     # virtualization
     # - gnome-boxes
+    - qemu
     - qemu-kvm
     - libvirt-daemon-config-network
     - libvirt-daemon-kvm
@@ -118,7 +119,6 @@ rpm:
     - icoutils
     - kio-admin
     - applet-window-buttons
-    - plymouth-kcm
     - kcron
     - xwaylandvideobridge
     - plasma-nm-openconnect
@@ -192,7 +192,6 @@ rpm:
     - google-noto-sans-mono-cjk-vf-fonts
     - google-noto-serif-cjk-vf-fonts
     - google-noto-color-emoji-fonts
-    # - google-noto-emoji-color-fonts.noarch # renamed in f39
 
     # ROCm drivers
     # - rocm-hip
