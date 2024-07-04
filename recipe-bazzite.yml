@@ -79,17 +79,17 @@ rpm:
     - fish
 
     # virtualization
-    # - gnome-boxes
-    - qemu
-    - qemu-kvm
-    - libvirt-daemon-config-network
-    - libvirt-daemon-kvm
-    - virt-install
-    - virt-manager
-    - virt-viewer
-    - virt-top
-    - libguestfs
-    - python3-libguestfs
+    - gnome-boxes
+    # - qemu
+    # - qemu-kvm
+    # - libvirt-daemon-config-network
+    # - libvirt-daemon-kvm
+    # - virt-install
+    # - virt-manager
+    # - virt-viewer
+    # - virt-top
+    # - libguestfs
+    # - python3-libguestfs
 
     # docker
     # - gnome-terminal
@@ -175,8 +175,6 @@ rpm:
 
     # fonts
     - ibm-plex-fonts-all.noarch
-    - liberation-fonts.noarch
-    - twitter-twemoji-fonts
     - lato-fonts
     - fira-code-fonts
     - google-noto-sans-cjk-vf-fonts
