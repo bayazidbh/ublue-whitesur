@@ -109,9 +109,6 @@ rpm:
     - samba-winexe
     - wsdd
 
-    - avif-pixbuf-loader
-    - heif-pixbuf-loader
-
     # kde utils
     - kate
     - icoutils
@@ -167,6 +164,8 @@ rpm:
     - kcm-fcitx5
     - fcitx5-qt6
     - fcitx5-mozc
+    - avif-pixbuf-loader
+    - heif-pixbuf-loader
     # - onedrive
     # - onedriver
 
