@@ -109,10 +109,8 @@ rpm:
     - samba-winexe
     - wsdd
 
-    # AVIF and HEIF
     - avif-pixbuf-loader
     - heif-pixbuf-loader
-    - libheif-tools
 
     # kde utils
     - kate
