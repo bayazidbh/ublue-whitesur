@@ -80,7 +80,7 @@ rpm:
     - fish
 
     # virtualization
-    - gnome-boxes
+    # - gnome-boxes
     # - qemu
     # - qemu-kvm
     # - libvirt-daemon-config-network
@@ -103,11 +103,11 @@ rpm:
     # - https://desktop.docker.com/linux/main/amd64/docker-desktop-4.21.1-x86_64.rpm
 
     # network shares
-    - samba
-    - nmap
-    - samba-winbind
-    - samba-winexe
-    - wsdd
+    # - samba
+    # - nmap
+    # - samba-winbind
+    # - samba-winexe
+    # - wsdd
 
     # kde utils
     - kate
@@ -190,8 +190,8 @@ rpm:
     # - rocm-clinfo
 
     # online installs
-    - https://github.com/Umio-Yasuno/amdgpu_top/releases/download/v0.1.10/amdgpu_top-0.1.10-1.x86_64.rpm
-    - https://download-cdn.resilio.com/stable/rpm/x86_64/0/resilio-sync-2.8.1.1390-1.x86_64.rpm
+    - https://github.com/Umio-Yasuno/amdgpu_top/releases/download/v0.10.2/amdgpu_top-0.10.2-1.x86_64.rpm
+    - https://download-cdn.resilio.com/stable/rpm/x86_64/0/resilio-sync-3.0.2.1058-1.x86_64.rpm
     # - https://github.com/rustdesk/rustdesk/releases/download/nightly/rustdesk-1.3.2-0.x86_64.rpm
     # - https://proton.me/download/PassDesktop/linux/x64/ProtonPass.rpm
     # - /tmp/scripts/pre/rpm/printer/epson/epsonscan2-6.7.61.0-1.x86_64.rpm
