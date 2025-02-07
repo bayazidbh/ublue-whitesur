@@ -171,6 +171,7 @@ rpm:
 
     # fonts
     - ibm-plex-fonts-all.noarch
+    - liberation-fonts-all
     - lato-fonts
     - fira-code-fonts
     - google-noto-sans-cjk-vf-fonts

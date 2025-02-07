@@ -186,8 +186,8 @@ rpm:
     # - onedriver
 
     # fonts
-    - ibm-plex-fonts-all.noarch
-    - liberation-fonts.noarch
+    - ibm-plex-fonts-all
+    - liberation-fonts-all
     - lato-fonts
     - fira-code-fonts
     - google-noto-sans-cjk-vf-fonts
