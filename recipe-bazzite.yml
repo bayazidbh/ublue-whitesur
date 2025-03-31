@@ -151,7 +151,7 @@ rpm:
     - jq
     - p7zip
     - ImageMagick
-    - qtpaths
+    # - qtpaths
 
     # nobara packages
     # - vkBasalt
