@@ -110,12 +110,13 @@ rpm:
     # - wsdd
 
     # kde utils
+    - konsole
     - kate
     - icoutils
     - kio-admin
     - applet-window-buttons
     - kcron
-    - xwaylandvideobridge
+    # - xwaylandvideobridge
     - plasma-nm-openconnect
 
     # global menu requirements
@@ -129,12 +130,12 @@ rpm:
     - libappstream-glib
 
     # gaming-utils
-    - gamemode
-    - gamescope
-    - mangohud
+    # - gamemode
+    # - gamescope
+    # - mangohud
     - goverlay
     - gameconqueror
-    - corectrl
+    # - corectrl
 
     # steamtinkerlaunch utils
     - zenity
@@ -150,6 +151,7 @@ rpm:
     - jq
     - p7zip
     - ImageMagick
+    - qtpaths
 
     # nobara packages
     # - vkBasalt
@@ -159,7 +161,7 @@ rpm:
     # - wine-staging
 
     # other utils
-    - input-remapper
+    # - input-remapper
     - waydroid
     - kcm-fcitx5
     - fcitx5-qt6
@@ -191,8 +193,8 @@ rpm:
     # - rocm-clinfo
 
     # online installs
-    - https://github.com/Umio-Yasuno/amdgpu_top/releases/download/v0.10.2/amdgpu_top-0.10.2-1.x86_64.rpm
-    - https://download-cdn.resilio.com/stable/rpm/x86_64/0/resilio-sync-3.0.2.1058-1.x86_64.rpm
+    # - https://github.com/Umio-Yasuno/amdgpu_top/releases/download/v0.10.2/amdgpu_top-0.10.2-1.x86_64.rpm
+    - https://download-cdn.resilio.com/3.0.3.1065/rpm/x86_64/0/resilio-sync-3.0.3.1065-1.x86_64.rpm
     # - https://github.com/rustdesk/rustdesk/releases/download/nightly/rustdesk-1.3.2-0.x86_64.rpm
     # - https://proton.me/download/PassDesktop/linux/x64/ProtonPass.rpm
     # - /tmp/scripts/pre/rpm/printer/epson/epsonscan2-6.7.61.0-1.x86_64.rpm
@@ -204,7 +206,7 @@ rpm:
     # Remove the native firefox (from Fedora) in favor of the Flatpak.
     # - firefox
     # - firefox-langpacks
-    - ptyxis
+    # - ptyxis
 
     # Configuration for the "first boot" experience, which is available after login.
 firstboot:
