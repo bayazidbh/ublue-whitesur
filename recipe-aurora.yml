@@ -181,6 +181,9 @@ rpm:
     - fcitx5-mozc
     - waydroid
     - duperemove
+    - rar
+    - unrar
+    - unarchiver
     # - obs-studio-plugin-vkcapture
     # - onedrive
     # - onedriver

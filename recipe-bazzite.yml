@@ -168,6 +168,9 @@ rpm:
     - fcitx5-mozc
     - avif-pixbuf-loader
     - heif-pixbuf-loader
+    - rar
+    - unrar
+    - unarchiver
     # - onedrive
     # - onedriver
 
