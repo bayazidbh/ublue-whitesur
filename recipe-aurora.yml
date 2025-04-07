@@ -183,7 +183,6 @@ rpm:
     - duperemove
     - rar
     - unrar
-    - unarchiver
     # - obs-studio-plugin-vkcapture
     # - onedrive
     # - onedriver
