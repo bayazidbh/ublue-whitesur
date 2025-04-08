@@ -182,7 +182,6 @@ rpm:
     - waydroid
     - duperemove
     - rar
-    - unrar
     # - obs-studio-plugin-vkcapture
     # - onedrive
     # - onedriver

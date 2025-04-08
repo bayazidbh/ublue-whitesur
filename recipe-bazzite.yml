@@ -169,7 +169,6 @@ rpm:
     - avif-pixbuf-loader
     - heif-pixbuf-loader
     - rar
-    - unrar
     # - onedrive
     # - onedriver
 
