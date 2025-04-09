@@ -118,6 +118,7 @@ rpm:
     - kcron
     # - xwaylandvideobridge
     - plasma-nm-openconnect
+    - qt6-qtvirtualkeyboard
 
     # global menu requirements
     - libdbusmenu

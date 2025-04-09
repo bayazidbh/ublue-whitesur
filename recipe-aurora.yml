@@ -126,6 +126,7 @@ rpm:
     - xwaylandvideobridge
     - plasma-nm-openconnect
     - konsole
+    - qt6-qtvirtualkeyboard
 
     # global menu requirements
     - libdbusmenu
