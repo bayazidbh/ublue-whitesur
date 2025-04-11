@@ -16,7 +16,7 @@ jobs:
         uses: dataaxiom/ghcr-cleanup-action@v1.0.16
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          packages: ublue-whitesur-bazzite,ublue-whitesur-aurora
+          packages: ublue-whitesur-bazzite-ally,ublue-whitesur-aurora
           older-than: 90 days
           keep-n-tagged: 7
           keep-n-untagged: 7
