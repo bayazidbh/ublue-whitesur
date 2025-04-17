@@ -53,7 +53,7 @@ jobs:
         base_image_name: [kinoite]
         recipe:
           - recipe-bazzite.yml
-          - recipe-aurora.yml
+          # - recipe-aurora.yml
 
     steps:
       # Checkout push-to-registry action GitHub repository
