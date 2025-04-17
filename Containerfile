@@ -32,9 +32,10 @@ COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
 # Copy the build script and all custom scripts.
 COPY scripts /tmp/scripts
 
-# Run the build script, then clean up temp files and finalize container build.
+# Run the build script, add /nix directory, then clean up temp files and finalize container build.
 RUN chmod +x /tmp/scripts/build.sh && \
         /tmp/scripts/build.sh && \
+        install -d -m 0755 /nix \
         chmod +x /tmp/image-info.sh && \
         /tmp/image-info.sh && \
         rm -rf /tmp/* /var/* && \
