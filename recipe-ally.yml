@@ -129,9 +129,9 @@ rpm:
     - merkuro
     - plasma-discover
     - plasma-discover-flatpak
-    - plasma-discover-libs
+    # - plasma-discover-libs
     - plasma-discover-notifier
-    - plasma-discover-offline-updates
+    # - plasma-discover-offline-updates
     - plasma-discover-rpm-ostree
     - plasma-discover-kns
     - qt6-qtlocation
