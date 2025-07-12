@@ -132,7 +132,6 @@ rpm:
     - plasma-discover-libs
     - plasma-discover-notifier
     - plasma-discover-offline-updates
-    - plasma-discover-packagekit
     - plasma-discover-rpm-ostree
     - plasma-discover-kns
     - qt6-qtlocation
