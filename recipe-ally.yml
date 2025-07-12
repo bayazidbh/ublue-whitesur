@@ -118,6 +118,24 @@ rpm:
     - kcron
     - plasma-nm-openconnect
     - qt6-qtvirtualkeyboard
+    - akonadi
+    - akonadi-calendar
+    - kcalutils
+    - kdepim-addons
+    - kdepim-runtime
+    - kimap
+    - kldap
+    - korganizer
+    - merkuro
+    - plasma-discover
+    - plasma-discover-flatpak
+    - plasma-discover-libs
+    - plasma-discover-notifier
+    - plasma-discover-offline-updates
+    - plasma-discover-packagekit
+    - plasma-discover-rpm-ostree
+    - plasma-discover-kns
+    - qt6-qtlocation
     # - xwaylandvideobridge
 
     # global menu requirements
@@ -212,6 +230,9 @@ rpm:
     # - firefox
     # - firefox-langpacks
     # - ptyxis
+
+    # remove crappy new app store they pushed
+    - bazaar
 
     # Configuration for the "first boot" experience, which is available after login.
 firstboot:
