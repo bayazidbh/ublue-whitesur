@@ -233,6 +233,7 @@ rpm:
 
     # remove crappy new app store they pushed
     - bazaar
+    - krunner-bazaar
 
     # Configuration for the "first boot" experience, which is available after login.
 firstboot:
