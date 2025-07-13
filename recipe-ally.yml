@@ -230,9 +230,7 @@ rpm:
     # - firefox-langpacks
     - ptyxis 
     # fix issues readding Discover
-    - plasma-discover-packagekit
-    - PackageKit
-    
+    - plasma-discover-packagekit    
 
     # remove crappy new app store
     - bazaar
