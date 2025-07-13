@@ -228,9 +228,13 @@ rpm:
     # Remove the native firefox (from Fedora) in favor of the Flatpak.
     # - firefox
     # - firefox-langpacks
-    # - ptyxis
+    - ptyxis 
+    # fix issues readding Discover
+    - plasma-discover-packagekit
+    - PackageKit
+    
 
-    # remove crappy new app store they pushed
+    # remove crappy new app store
     - bazaar
     - krunner-bazaar
 
