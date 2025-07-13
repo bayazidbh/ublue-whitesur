@@ -127,10 +127,10 @@ rpm:
     - kldap
     - korganizer
     - merkuro
-    - plasma-discover
+    # - plasma-discover
     - plasma-discover-flatpak
     # - plasma-discover-libs
-    - plasma-discover-notifier
+    # - plasma-discover-notifier
     # - plasma-discover-offline-updates
     # - plasma-discover-rpm-ostree
     - plasma-discover-kns
