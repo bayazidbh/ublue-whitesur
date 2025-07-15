@@ -127,14 +127,14 @@ rpm:
     - kldap
     - korganizer
     - merkuro
-    # - plasma-discover
+    - qt6-qtlocation
     - plasma-discover-flatpak
+    - plasma-discover-kns
+    - plasma-discover-notifier
+    # - plasma-discover
     # - plasma-discover-libs
-    # - plasma-discover-notifier
     # - plasma-discover-offline-updates
     # - plasma-discover-rpm-ostree
-    - plasma-discover-kns
-    - qt6-qtlocation
     # - xwaylandvideobridge
 
     # global menu requirements
