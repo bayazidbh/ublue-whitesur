@@ -131,10 +131,6 @@ rpm:
     - plasma-discover-flatpak
     - plasma-discover-kns
     - plasma-discover-notifier
-    # - plasma-discover
-    # - plasma-discover-libs
-    # - plasma-discover-offline-updates
-    # - plasma-discover-rpm-ostree
     # - xwaylandvideobridge
 
     # global menu requirements
@@ -233,6 +229,10 @@ rpm:
     # remove new app store
     - bazaar
     - krunner-bazaar
+    # fix plasma-discover adding packagekit
+    - packagekit
+    # - plasma-discover-offline-updates
+    # - plasma-discover-rpm-ostree
 
     # Configuration for the "first boot" experience, which is available after login.
 firstboot:
