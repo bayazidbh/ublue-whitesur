@@ -231,7 +231,7 @@ rpm:
     - krunner-bazaar
     # fix plasma-discover adding packagekit
     # - packagekit
-    - plasma-discover-offline-updates
+    # - plasma-discover-offline-updates
     - plasma-discover-rpm-ostree
 
     # Configuration for the "first boot" experience, which is available after login.
