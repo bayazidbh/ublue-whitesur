@@ -227,8 +227,8 @@ rpm:
     - ptyxis 
 
     # remove new app store
-    - bazaar
-    - krunner-bazaar
+    # - bazaar
+    # - krunner-bazaar
     # fix plasma-discover adding packagekit
     # - packagekit
     # - plasma-discover-offline-updates
