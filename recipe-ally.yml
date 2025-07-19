@@ -128,9 +128,9 @@ rpm:
     - korganizer
     - merkuro
     - qt6-qtlocation
-    - plasma-discover-flatpak
-    - plasma-discover-kns
-    - plasma-discover-notifier
+    # - plasma-discover-flatpak
+    # - plasma-discover-kns
+    # - plasma-discover-notifier
     # - xwaylandvideobridge
 
     # global menu requirements
