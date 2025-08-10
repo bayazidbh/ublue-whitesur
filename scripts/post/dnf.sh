@@ -6,4 +6,4 @@
 set -oue pipefail
 
 # Your code goes here.
-dnf install -y --no-best plasma-discover-flatpak plasma-discover-kns plasma-discover-notifier /tmp/scripts/post/rpm/discord-canary-0.0.736-2.fc42.x86_64.rpm
+dnf install -y --no-best plasma-discover-flatpak plasma-discover-kns plasma-discover-notifier
