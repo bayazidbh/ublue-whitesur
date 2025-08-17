@@ -6,4 +6,4 @@
 set -oue pipefail
 
 # Your code goes here.
-dnf install -y --no-best plasma-discover-flatpak plasma-discover-kns plasma-discover-notifier
+dnf install -y --no-best plasma-discover-flatpak plasma-discover-kns plasma-discover-notifier dbus-glib GConf2
