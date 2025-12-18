@@ -1,3 +1,9 @@
+# Archived
+
+Archived because bazzite-deck is way too big for my free Github Actions and I no longer use Bazzite.
+
+---
+
 # ublue-kinoite-customized
 
 [![build-ublue](https://github.com/bayazidbh/ublue-kinoite-customized/actions/workflows/build.yml/badge.svg)](https://github.com/bayazidbh/ublue-kinoite-customized/actions/workflows/build.yml)
